@@ -1,0 +1,133 @@
+* {
+  color: #151515;
+  text-decoration: none;
+  max-width: 1440px;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 74px;
+}
+.header__list {
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+  margin-right: 120px;
+}
+.header__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 34px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__link:last-of-type {
+  margin-right: 0;
+}
+.header__link:hover {
+  opacity: 0.75;
+}
+
+.face {
+  max-height: 856px;
+  position: relative;
+}
+.face__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  max-width: 304px;
+  margin-top: 80px;
+  margin-left: 120px;
+}
+.face__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+  max-width: 460px;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+.face__button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  background: #24B47E;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 120px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+.face__features {
+  display: flex;
+}
+.face__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 167px 30px 0 120px;
+}
+.face__line {
+  margin-top: 176px;
+  border-bottom: 3px;
+  width: 132px;
+  background-color: #D7D4D4;
+  height: 2px;
+}
+.face__img {
+  position: absolute;
+  top: -68px;
+  right: 0;
+  z-index: -10;
+}
+.face__sticky {
+  max-width: 440px;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 50%;
+  bottom: 209px;
+  background: #F4F4F4;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  border-radius: 20px;
+}
+.face__sticky-img {
+  padding-left: 46px;
+}
+
+.drive__container {
+  max-height: 460px;
+  display: flex;
+}
+.drive__text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.drive__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  max-width: 470px;
+}/*# sourceMappingURL=style.css.map */

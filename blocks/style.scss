@@ -1,0 +1,136 @@
+$size_xl : 1440px;
+$main_color: #151515;
+$inter : 'Inter';
+$opacity : .75;
+$transition: .3s;
+*{
+  color: $main_color;
+  text-decoration: none;
+  max-width: $size_xl;
+  margin: 0;
+}
+.header{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 74px;
+    &__list{
+      min-width: 400px;
+      display: flex;
+      align-items: center;
+      margin-right: 120px;
+    }
+    &__link{
+      font-family: $inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      margin-right: 34px;
+      cursor: pointer;
+      transition: $transition;
+    }
+    &__link:last-of-type{
+      margin-right: 0;
+    }
+    &__link:hover{
+      opacity: $opacity;
+    }
+}
+.face{
+  max-height: 856px;
+  position: relative;
+  &__title{
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    max-width: 304px;
+    margin-top: 80px;
+    margin-left: 120px;
+  }
+  &__subtitle{
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #222222;
+    opacity: 0.7;
+    max-width: 460px;
+    margin-top: 50px;
+    margin-left: 120px;
+  }
+  &__button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    background: #24B47E;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 120px;
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__features{
+    display: flex;
+  }
+  &__text{
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin:167px 30px 0 120px;
+  }
+  &__line{
+    margin-top: 176px;
+    border-bottom: 3px;
+    width: 132px;
+    background-color: #D7D4D4;
+    height: 2px;
+  }
+  &__img{
+    position: absolute;
+    top: -68px;
+    right: 0;
+    z-index: -10;
+  }
+  &__sticky{
+    max-width: 440px;
+    position:sticky;
+    left: 50%;
+    bottom: 209px;
+    background: #F4F4F4;
+    box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+    border-radius: 20px;
+  }
+  &__sticky-img{
+    padding-left: 46px;
+  }
+}
+  .drive{
+    &__container{
+      max-height: 460px;
+      display: flex;
+    }
+    &__text-block{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__title{
+      font-family: $inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 44px;
+      max-width: 470px;
+    }
+  }
