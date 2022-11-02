@@ -663,6 +663,7 @@ $transition: .3s;
   }
   &__forms{
     background: #EFEFEF;
+    position: relative;
   }
   &__form{
     margin-left: 120px;
@@ -674,14 +675,15 @@ $transition: .3s;
     font-size: 13px;
     line-height: 28px;
     color: #151515;
-    width: 360px;
+    width: 340px;
     height: 50px;
     cursor: pointer;
     background: #EFEFEF;
+    padding: 0 20px;
     @media screen and (max-width:1150px){
       margin-left: 60px;
       height: 40px;
-      width: 330px;
+      width: 310px;
     }
   }
   &__form::-webkit-input-placeholder {color:  #222222;  opacity: 0.7;}
@@ -758,5 +760,32 @@ $transition: .3s;
   }
   &__icon{
     background: #EFEFEF;
+  }
+  &__form-button{
+    display: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: right;
+    color: #151515;
+    border: none;
+    background: #EFEFEF;
+    position: absolute;
+    top:12px;
+    left: 444px;
+    cursor: pointer;
+    z-index: 20;
+    @media screen and (max-width:1150px){
+      left: 356px;
+      top: 9px;
+    }
+  }
+  &__form-button_on{
+    display: block;
+  }
+  input:focus::placeholder {
+    color: transparent;
   }
 }

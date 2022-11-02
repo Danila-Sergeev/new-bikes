@@ -810,6 +810,7 @@
 }
 .footer__forms {
   background: #EFEFEF;
+  position: relative;
 }
 .footer__form {
   margin-left: 120px;
@@ -821,16 +822,17 @@
   font-size: 13px;
   line-height: 28px;
   color: #151515;
-  width: 360px;
+  width: 340px;
   height: 50px;
   cursor: pointer;
   background: #EFEFEF;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1150px) {
   .footer__form {
     margin-left: 60px;
     height: 40px;
-    width: 330px;
+    width: 310px;
   }
 }
 .footer__form::-webkit-input-placeholder {
@@ -927,4 +929,39 @@
 }
 .footer__icon {
   background: #EFEFEF;
+}
+.footer__form-button {
+  display: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: right;
+  color: #151515;
+  border: none;
+  background: #EFEFEF;
+  position: absolute;
+  top: 12px;
+  left: 444px;
+  cursor: pointer;
+  z-index: 20;
+}
+@media screen and (max-width: 1150px) {
+  .footer__form-button {
+    left: 356px;
+    top: 9px;
+  }
+}
+.footer__form-button_on {
+  display: block;
+}
+.footer input:focus::-moz-placeholder {
+  color: transparent;
+}
+.footer input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.footer input:focus::placeholder {
+  color: transparent;
 }/*# sourceMappingURL=style.css.map */
