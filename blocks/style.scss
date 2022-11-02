@@ -28,6 +28,9 @@ $transition: .3s;
     @media screen and (max-width:1150px){
       margin-right: 60px;
     }
+    @media screen and (max-width:1000px){
+      min-width: 340px
+    }
   }
   &__link{
     font-family: $inter;
@@ -38,6 +41,10 @@ $transition: .3s;
     margin-right: 34px;
     cursor: pointer;
     transition: $transition;
+    @media screen and (max-width:1000px){
+      font-size: 12px;
+      margin-right: 30px;
+    }
   }
   &__link:last-of-type{
     margin-right: 0;
