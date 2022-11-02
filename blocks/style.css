@@ -15,12 +15,21 @@
   display: flex;
   flex-direction: row-reverse;
   height: 74px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .header__list {
   min-width: 400px;
   display: flex;
   align-items: center;
   margin-right: 120px;
+}
+@media screen and (max-width: 1150px) {
+  .header__list {
+    margin-right: 60px;
+  }
 }
 .header__link {
   font-family: "Inter";
@@ -53,6 +62,19 @@
   margin-top: 80px;
   margin-left: 120px;
 }
+@media screen and (max-width: 1150px) {
+  .face__title {
+    font-size: 50px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .face__title {
+    font-size: 42px;
+    max-width: 250px;
+    margin-top: 50px;
+  }
+}
 .face__subtitle {
   font-family: "Inter";
   font-style: normal;
@@ -64,6 +86,20 @@
   max-width: 460px;
   margin-top: 50px;
   margin-left: 120px;
+}
+@media screen and (max-width: 1150px) {
+  .face__subtitle {
+    font-size: 16px;
+    max-width: 400px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .face__subtitle {
+    font-size: 14px;
+    max-width: 283px;
+    margin-top: 30px;
+  }
 }
 .face__button {
   padding: 0;
@@ -87,6 +123,19 @@
   background-repeat: no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.5s, color 0.5s;
+  cursor: pointer;
+  z-index: 10;
+}
+@media screen and (max-width: 1150px) {
+  .face__button {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .face__button {
+    margin-top: 30px;
+    margin-left: 60px;
+  }
 }
 .face__button:hover {
   background-size: 100% 100%;
@@ -104,6 +153,17 @@
   line-height: 18px;
   margin: 167px 30px 0 120px;
 }
+@media screen and (max-width: 1150px) {
+  .face__text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .face__text {
+    margin: 55px 20px 0 60px;
+    font-size: 13px;
+  }
+}
 .face__line {
   margin-top: 176px;
   border-bottom: 3px;
@@ -111,15 +171,41 @@
   background-color: #D7D4D4;
   height: 2px;
 }
+@media screen and (max-width: 1150px) {
+  .face__line {
+    width: 125px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .face__line {
+    margin-top: 65px;
+    width: 90px;
+  }
+}
 .face__img {
   position: absolute;
   top: -68px;
   right: 0;
 }
+@media screen and (max-width: 1150px) {
+  .face__img {
+    max-width: 510px;
+    max-height: 736px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .face__img {
+    max-width: 410px;
+    max-height: 636px;
+  }
+}
 .face__sticky {
   max-width: 440px;
   position: -webkit-sticky;
   position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 50%;
   bottom: 30%;
   background: #F4F4F4;
@@ -127,25 +213,87 @@
   border-radius: 20px;
   z-index: 10;
 }
+@media screen and (max-width: 1150px) {
+  .face__sticky {
+    max-width: 290px;
+    bottom: 40%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .face__sticky {
+    max-width: 220px;
+    bottom: 50%;
+  }
+}
 .face__sticky-img {
   border-radius: 20px;
-  padding-left: 46px;
+}
+@media screen and (max-width: 1150px) {
+  .face__sticky-img {
+    max-width: 340px;
+    max-height: 164px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .face__sticky-img {
+    max-width: 220px;
+    max-height: 125px;
+  }
 }
 
 .drive__container {
-  max-height: 460px;
-  display: flex;
-  justify-content: space-between;
-  margin: 250px auto 60px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 250px auto 60px 120px;
+}
+@media screen and (max-width: 1150px) {
+  .drive__container {
+    margin: 200px auto 60px 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .drive__container {
+    margin: 75px auto 60px 60px;
+  }
 }
 .drive__img {
-  margin-left: 120px;
+  max-width: 650px;
+}
+@media screen and (max-width: 1316px) {
+  .drive__img {
+    max-width: 580px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .drive__img {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .drive__img {
+    max-width: 380px;
+  }
 }
 .drive__text-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 400px;
+  margin-left: 80px;
   margin-right: 120px;
+}
+@media screen and (max-width: 1145px) {
+  .drive__text-block {
+    margin-left: 50px;
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .drive__text-block {
+    margin-left: 0;
+    max-width: 350px;
+    margin-left: 40px;
+  }
 }
 .drive__title {
   font-family: "Inter";
@@ -155,12 +303,44 @@
   line-height: 44px;
   max-width: 470px;
 }
+@media screen and (max-width: 1300px) {
+  .drive__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .drive__title {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .drive__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 .drive__name {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
+}
+@media screen and (max-width: 1300px) {
+  .drive__name {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .drive__name {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .drive__name {
+    font-size: 14px;
+  }
 }
 .drive__prof {
   font-family: "Inter";
@@ -171,55 +351,20 @@
   color: #222222;
   opacity: 0.7;
 }
-
-.training {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  margin-top: 150px;
-  margin-bottom: 120px;
+@media screen and (max-width: 1300px) {
+  .drive__prof {
+    font-size: 14px;
+  }
 }
-.training__text-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 120px;
+@media screen and (max-width: 1140px) {
+  .drive__prof {
+    font-size: 12px;
+  }
 }
-.training__title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 60px;
-}
-.training__subtitle {
-  max-width: 460px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: #222222;
-  opacity: 0.7;
-  margin-top: 50px;
-}
-.training__app {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  margin-right: 30px;
-  cursor: pointer;
-}
-.training__app:hover {
-  opacity: 0.75;
-}
-.training__apps {
-  display: flex;
-}
-.training__img {
-  margin-right: 120px;
+@media screen and (max-width: 934px) {
+  .drive__prof {
+    font-size: 10px;
+  }
 }
 
 .types {
@@ -232,6 +377,14 @@
   font-size: 55px;
   line-height: 60px;
   margin-top: 60px;
+  margin-left: 120px;
+}
+@media screen and (max-width: 1150px) {
+  .types__title {
+    margin-left: 60px;
+    font-size: 50px;
+    margin-top: 30px;
+  }
 }
 .types__subtitle {
   margin-top: 50px;
@@ -243,22 +396,56 @@
   line-height: 28px;
   color: #222222;
   opacity: 0.7;
+  margin-left: 120px;
+}
+@media screen and (max-width: 1150px) {
+  .types__subtitle {
+    margin-left: 60px;
+    font-size: 16px;
+  }
 }
 .types__images {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 80px auto 0 auto;
-}
-.types__slider-container {
   max-width: 1200px;
-  margin: auto;
 }
 .types__img {
   max-width: 588px;
+  max-height: 388px;
+  margin-right: 40px;
+}
+@media screen and (max-width: 1400px) {
+  .types__img {
+    max-width: 543px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .types__img {
+    max-width: 470px;
+  }
+}
+@media screen and (max-width: 1034px) {
+  .types__img {
+    max-width: 370px;
+  }
+}
+@media screen and (max-width: 802px) {
+  .types__img {
+    max-width: 320px;
+  }
+}
+.types__img:last-of-type {
+  margin-right: 0;
 }
 .types__control {
   top: calc(107% - var(--size) / 2);
   left: 182px;
+}
+@media screen and (max-width: 1150px) {
+  .types__control {
+    left: 125px;
+  }
 }
 .types__control[data-slide=next] {
   background: url(../img/Vector1.svg) #EBEBEB no-repeat center;
@@ -269,6 +456,11 @@
 .types__control[data-slide=prev] {
   background: url(../img/Vector.svg) #EBEBEB no-repeat center;
   left: 112px;
+}
+@media screen and (max-width: 1150px) {
+  .types__control[data-slide=prev] {
+    left: 58px;
+  }
 }
 .types__control[data-slide=prev]:hover {
   opacity: 0.6;
@@ -285,10 +477,32 @@
   font-size: 55px;
   line-height: 60px;
 }
+@media screen and (max-width: 1150px) {
+  .bikes__title {
+    margin-left: 60px;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 882px) {
+  .bikes__title {
+    font-size: 40px;
+  }
+}
+.bikes__icon {
+  margin-left: 33px;
+}
+.bikes__icon:first-of-type {
+  margin-left: 0;
+}
 .bikes__item {
   display: flex;
   justify-content: center;
   margin-top: 140px;
+}
+@media screen and (max-width: 1033px) {
+  .bikes__item {
+    margin-top: 80px;
+  }
 }
 .bikes__img-cont {
   display: flex;
@@ -299,12 +513,67 @@
   height: 380px;
   background: #F4F4F4;
   box-shadow: 0 -16px 60px 4px rgba(0, 0, 0, 0.05);
-  margin-right: 30px;
   cursor: pointer;
   margin-bottom: 24px;
 }
+@media screen and (max-width: 1280px) {
+  .bikes__img-cont {
+    width: 340px;
+    height: 340px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .bikes__img-cont {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 1033px) {
+  .bikes__img-cont {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 882px) {
+  .bikes__img-cont {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 12px;
+  }
+}
 .bikes__img {
   border-radius: 20px;
+  width: 340px;
+  height: 340px;
+  margin-left: 30px;
+}
+@media screen and (max-width: 1280px) {
+  .bikes__img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .bikes__img {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 1033px) {
+  .bikes__img {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 882px) {
+  .bikes__img {
+    width: 160px;
+    height: 160px;
+  }
+}
+.bikes__img:first-of-type {
+  margin-left: 0;
 }
 .bikes__text {
   font-family: "Inter";
@@ -313,6 +582,16 @@
   font-size: 18px;
   line-height: 22px;
   color: #151515;
+}
+@media screen and (max-width: 1150px) {
+  .bikes__text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 882px) {
+  .bikes__text {
+    font-size: 11px;
+  }
 }
 .bikes__indicators {
   bottom: -90px;
@@ -328,6 +607,17 @@
   justify-content: flex-end;
   max-width: 500px;
   margin: 0;
+  margin-right: 120px;
+}
+@media screen and (max-width: 1150px) {
+  .bikes__indicators {
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 882px) {
+  .bikes__indicators {
+    left: 663px;
+  }
 }
 .bikes__indicator {
   background-image: none;
@@ -344,8 +634,143 @@
   display: block;
   padding-right: 55px;
 }
+@media screen and (max-width: 1150px) {
+  .bikes__indicator {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 882px) {
+  .bikes__indicator {
+    font-size: 12px;
+    padding-right: 4px;
+  }
+}
 .bikes__indicator:hover {
   opacity: 0.6;
+}
+
+.training {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 150px 120px 120px auto;
+}
+@media screen and (max-width: 1150px) {
+  .training {
+    margin-right: 60px;
+  }
+}
+.training__text-block {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 120px;
+}
+@media screen and (max-width: 1150px) {
+  .training__text-block {
+    margin-left: 60px;
+  }
+}
+.training__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+}
+@media screen and (max-width: 1300px) {
+  .training__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .training__title {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .training__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.training__subtitle {
+  max-width: 460px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1300px) {
+  .training__subtitle {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .training__subtitle {
+    font-size: 14px;
+    line-height: 25px;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .training__subtitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+.training__app {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  .training__app {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .training__app {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .training__app {
+    font-size: 12px;
+  }
+}
+.training__app:hover {
+  opacity: 0.75;
+}
+.training__apps {
+  display: flex;
+}
+.training__img {
+  max-width: 650px;
+}
+@media screen and (max-width: 1316px) {
+  .training__img {
+    max-width: 580px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .training__img {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .training__img {
+    max-width: 380px;
+  }
 }
 
 .footer {
@@ -364,6 +789,14 @@
   margin: 0 auto 50px 120px;
   padding-top: 80px;
 }
+@media screen and (max-width: 1150px) {
+  .footer__title {
+    font-size: 22px;
+    margin-left: 60px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+}
 .footer__forms {
   background: #EFEFEF;
 }
@@ -381,6 +814,13 @@
   height: 50px;
   cursor: pointer;
   background: #EFEFEF;
+}
+@media screen and (max-width: 1150px) {
+  .footer__form {
+    margin-left: 60px;
+    height: 40px;
+    width: 330px;
+  }
 }
 .footer__form::-webkit-input-placeholder {
   color: #222222;
@@ -421,6 +861,12 @@
   margin: 100px auto 0 120px;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 1150px) {
+  .footer__name {
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+}
 .footer__switch-box {
   background: #EFEFEF;
   display: flex;
@@ -429,6 +875,12 @@
   bottom: 80px;
   right: 120px;
   width: 140px;
+}
+@media screen and (max-width: 1000px) {
+  .footer__switch-box {
+    bottom: 40px;
+    right: 60px;
+  }
 }
 .footer__switch-btn {
   display: inline-block;

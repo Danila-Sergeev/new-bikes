@@ -17,11 +17,17 @@ $transition: .3s;
   display: flex;
   flex-direction: row-reverse;
   height: 74px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   &__list{
     min-width: 400px;
     display: flex;
     align-items: center;
     margin-right: 120px;
+    @media screen and (max-width:1150px){
+      margin-right: 60px;
+    }
   }
   &__link{
     font-family: $inter;
@@ -52,6 +58,15 @@ $transition: .3s;
     max-width: 304px;
     margin-top: 80px;
     margin-left: 120px;
+    @media screen and (max-width:1150px){
+      font-size: 50px;
+      margin-left: 60px;
+    }
+    @media screen and (max-width:1000px){
+      font-size: 42px;
+      max-width: 250px;
+      margin-top: 50px;
+    }
   }
   &__subtitle{
     font-family: $inter;
@@ -64,6 +79,16 @@ $transition: .3s;
     max-width: 460px;
     margin-top: 50px;
     margin-left: 120px;
+    @media screen and (max-width:1150px){
+      font-size: 16px;
+      max-width: 400px;
+      margin-left: 60px;
+    }
+    @media screen and (max-width:1000px){
+      font-size: 14px;
+      max-width: 283px;
+      margin-top: 30px;
+    }
   }
   &__button{
     padding: 0;
@@ -87,6 +112,15 @@ $transition: .3s;
     background-repeat: no-repeat;
     background-size: 0% 100%;
     transition: background-size .5s, color .5s;
+    cursor: pointer;
+    z-index: 10;
+    @media screen and (max-width:1150px){
+      margin-left: 60px;
+    }
+    @media screen and (max-width:1000px){
+      margin-top: 30px;
+      margin-left: 60px;
+    }
   }
   &__button:hover{
     background-size: 100% 100%;
@@ -103,6 +137,13 @@ $transition: .3s;
     font-size: 18px;
     line-height: 18px;
     margin:167px 30px 0 120px;
+    @media screen and (max-width:1150px){
+      font-size: 16px;
+    }
+    @media screen and (max-width:1000px){
+      margin: 55px 20px 0 60px;
+      font-size: 13px;
+    }
   }
   &__line{
     margin-top: 176px;
@@ -110,42 +151,100 @@ $transition: .3s;
     width: 132px;
     background-color: #D7D4D4;
     height: 2px;
+    @media screen and (max-width:1150px){
+      width: 125px;
+    }
+    @media screen and (max-width:1000px){
+      margin-top: 65px;
+      width: 90px;
+    }
   }
   &__img{
     position: absolute;
     top: -68px;
     right: 0;
-  }
+    @media screen and (max-width:1150px){
+      max-width: 510px;
+      max-height: 736px;
+    }
+    @media screen and (max-width:1000px){
+      max-width: 410px;
+      max-height: 636px;
+    }
+}
   &__sticky{
     max-width: 440px;
     position:sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 50%;
     bottom: 30%;
     background: #F4F4F4;
     box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
     border-radius: 20px;
     z-index: 10;
+    @media screen and (max-width:1150px){
+      max-width: 290px;
+      bottom: 40%;
+    }
+    @media screen and (max-width:1000px){
+      max-width: 220px;
+      bottom: 50%;
+    }
   }
   &__sticky-img{
     border-radius: 20px;
-    padding-left: 46px;
+    @media screen and (max-width:1150px){
+      max-width: 340px;
+      max-height: 164px;
+    }
+    @media screen and (max-width:1000px){
+      max-width: 220px;
+      max-height: 125px;
+    }
   }
 }
 .drive{
   &__container{
-    max-height: 460px;
-    display: flex;
-    justify-content: space-between;
-    margin: 250px auto 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 250px auto 60px 120px;
+    @media screen and (max-width:1150px){
+      margin: 200px auto 60px 60px
+    }
+    @media screen and (max-width:1000px){
+      margin: 75px auto 60px 60px
+    }
   }
   &__img{
-    margin-left: 120px;
+    max-width: 650px;
+    @media screen and (max-width:1316px){
+      max-width: 580px;
+    }
+    @media screen and (max-width:1140px){
+      max-width: 480px;
+    }
+    @media screen and (max-width:934px){
+      max-width: 380px;
+    }
   }
   &__text-block{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 400px;
+    margin-left: 80px;
     margin-right: 120px;
+    @media screen and (max-width:1145px){
+      margin-left: 50px;
+      margin-right: 60px;
+    }
+    @media screen and (max-width:934px){
+      margin-left: 0;
+      max-width: 350px;
+      margin-left: 40px;
+    }
   }
   &__title{
     font-family: $inter;
@@ -154,6 +253,17 @@ $transition: .3s;
     font-size: 34px;
     line-height: 44px;
     max-width: 470px;
+    @media screen and (max-width:1300px){
+      font-size: 30px;
+    }
+    @media screen and (max-width:1140px){
+      font-size: 26px;
+      line-height: 35px;
+    }
+    @media screen and (max-width:934px){
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
   &__name{
     font-family: $inter;
@@ -161,6 +271,15 @@ $transition: .3s;
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
+    @media screen and (max-width:1300px){
+      font-size: 18px;
+    }
+    @media screen and (max-width:1140px){
+      font-size: 16px;
+    }
+    @media screen and (max-width:934px){
+      font-size: 14px;
+    }
   }
   &__prof{
     font-family: $inter;
@@ -170,57 +289,18 @@ $transition: .3s;
     line-height: 28px;
     color: #222222;
     opacity: 0.7;
+    @media screen and (max-width:1300px){
+      font-size: 14px;
+    }
+    @media screen and (max-width:1140px){
+      font-size: 12px;
+    }
+    @media screen and (max-width:934px){
+      font-size: 10px;
+    }
   }
 }
-.training{
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  margin-top: 150px;
-  margin-bottom: 120px;
-  &__text-block{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 120px;
-  }
-  &__title{
-    font-family: $inter;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 60px;
-  }
-  &__subtitle{
-    max-width: 460px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #222222;
-    opacity: 0.7;
-    margin-top: 50px;
-  }
-  &__app{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    margin-right: 30px;
-    cursor: pointer;
-  }
-  &__app:hover{
-    opacity: 0.75;
-  }
-  &__apps{
-    display: flex;
-  }
-  &__img{
-    margin-right: 120px;
-  }
-}
+
 .types{
   display: flex;
   &__title{
@@ -230,6 +310,12 @@ $transition: .3s;
     font-size: 55px;
     line-height: 60px;
     margin-top: 60px;
+    margin-left: 120px;
+    @media screen and (max-width:1150px){
+      margin-left: 60px;
+      font-size: 50px;
+      margin-top: 30px;
+    }
   }
   &__subtitle{
     margin-top: 50px;
@@ -241,22 +327,49 @@ $transition: .3s;
     line-height: 28px;
     color: #222222;
     opacity: 0.7;
+    margin-left: 120px;
+    @media screen and (max-width:1150px){
+      margin-left: 60px;
+      font-size: 16px;
+    }
   }
+
   &__images{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     margin: 80px auto 0 auto;
-  }
-  &__slider-container{
     max-width: 1200px;
-    margin: auto;
   }
+
   &__img{
     max-width: 588px;
+    max-height: 388px;
+    margin-right: 40px;
+    @media screen and (max-width:1400px){
+      max-width: 543px;
+    }
+    @media screen and (max-width:1220px){
+      max-width: 470px;
+    }
+    @media screen and (max-width:1034px){
+      max-width: 370px;
+    }
+    @media screen and (max-width:802px){
+      max-width: 320px;
+    }
+  }
+  &__img:first-of-type{
+    
+  }
+  &__img:last-of-type{
+    margin-right: 0;
   }
   &__control{
     top: calc(107% - (var(--size) / 2));
     left:182px;
+    @media screen and (max-width:1150px){
+      left: 125px;
+    }
   }
   &__control[data-slide='next'] {
     background: url(../img/Vector1.svg) #EBEBEB no-repeat center;
@@ -267,7 +380,10 @@ $transition: .3s;
   }
   &__control[data-slide='prev'] {
     background: url(../img/Vector.svg) #EBEBEB no-repeat center;
-    left:112px
+    left:112px;
+    @media screen and (max-width:1150px){
+      left:58px;
+    }
   }
   &__control[data-slide='prev']:hover {
     opacity: .6;
@@ -275,8 +391,6 @@ $transition: .3s;
 }
 .bikes{
   margin-top: 120px;
-  &__slider-container{
-  }
   &__title{
     margin-left: 120px;
     font-family: $inter;
@@ -284,11 +398,27 @@ $transition: .3s;
     font-weight: 700;
     font-size: 55px;
     line-height: 60px;
+    @media screen and (max-width:1150px){
+      margin-left: 60px;
+      font-size: 50px;
+    }
+    @media screen and (max-width:882px){
+      font-size: 40px;
+    }
+  }
+  &__icon{
+    margin-left: 33px;
+  }
+  &__icon:first-of-type{
+    margin-left: 0;
   }
   &__item{
     display: flex;
     justify-content: center;
     margin-top: 140px;
+    @media screen and (max-width:1033px){
+      margin-top: 80px;
+    }
   }
   &__img-cont{
     display: flex;
@@ -299,13 +429,51 @@ $transition: .3s;
     height: 380px;
     background: #F4F4F4;
     box-shadow: 0 -16px 60px 4px rgba(0, 0, 0, 0.05);
-    margin-right: 30px;
     cursor: pointer;
     margin-bottom: 24px;
+    @media screen and (max-width:1280px){
+      width: 340px;
+      height: 340px;
+    }
+    @media screen and (max-width:1150px){
+      width: 300px;
+      height: 300px;
+      margin-bottom: 16px;
+    }
+    @media screen and (max-width:1033px){
+      width: 260px;
+      height: 260px;
+    }
+    @media screen and (max-width:882px){
+      width: 200px;
+      height: 200px;
+      margin-bottom: 12px;
+    }
   }
   &__img{
     border-radius: 20px;
-    
+    width: 340px;
+    height: 340px;
+    margin-left: 30px;
+    @media screen and (max-width:1280px){
+      width: 300px;
+      height: 300px;
+    }
+    @media screen and (max-width:1150px){
+      width: 260px;
+      height: 260px;
+    }
+    @media screen and (max-width:1033px){
+      width: 220px;
+      height: 220px;
+    }
+    @media screen and (max-width:882px){
+      width: 160px;
+      height: 160px;
+    }
+  }
+  &__img:first-of-type{
+    margin-left: 0;
   }
   &__text{
     font-family: $inter;
@@ -314,6 +482,12 @@ $transition: .3s;
     font-size: 18px;
     line-height: 22px;
     color: #151515;
+    @media screen and (max-width:1150px){
+      font-size: 16px;
+    }
+    @media screen and (max-width:882px){
+      font-size: 11px;
+    }
   }
   &__indicators{
     bottom: -90px;
@@ -329,6 +503,13 @@ $transition: .3s;
     justify-content: flex-end;
     max-width: 500px;
     margin: 0;
+    margin-right: 120px;
+    @media screen and (max-width:1150px){
+      margin-right: 60px;
+    }
+    @media screen and (max-width:882px){
+      left: 663px;
+    }
   }
   &__indicator{
     background-image: none;
@@ -344,11 +525,113 @@ $transition: .3s;
     box-sizing: border-box;
     display: block;
     padding-right: 55px;
+    @media screen and (max-width:1150px){
+      font-size: 16px;
+    }
+    @media screen and (max-width:882px){
+      font-size: 12px;
+      padding-right: 4px;
+    }
   }
   &__indicator:hover{
     opacity: .6;
   }
 
+}
+.training{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 150px 120px 120px auto;
+  @media screen and (max-width:1150px){
+    margin-right: 60px;
+  }
+  &__text-block{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 120px;
+    @media screen and (max-width:1150px){
+      margin-left: 60px;
+    }
+  }
+  &__title{
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    @media screen and (max-width:1300px){
+      font-size: 30px;
+    }
+    @media screen and (max-width:1140px){
+      font-size: 26px;
+      line-height: 35px;
+    }
+    @media screen and (max-width:934px){
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  &__subtitle{
+    max-width: 460px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #222222;
+    opacity: 0.7;
+    margin-top: 50px;
+    @media screen and (max-width:1300px){
+      font-size: 16px;
+    }
+    @media screen and (max-width:1140px){
+      font-size: 14px;
+      line-height: 25px;
+      max-width: 350px;
+    }
+    @media screen and (max-width:934px){
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  &__app{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    margin-right: 30px;
+    cursor: pointer;
+    @media screen and (max-width:1300px){
+      font-size: 16px;
+    }
+    @media screen and (max-width:1140px){
+      font-size: 14px;
+    }
+    @media screen and (max-width:934px){
+      font-size: 12px;
+    }
+  }
+  &__app:hover{
+    opacity: 0.75;
+  }
+  &__apps{
+    display: flex;
+  }
+  &__img{
+    max-width: 650px;
+    @media screen and (max-width:1316px){
+      max-width: 580px;
+    }
+    @media screen and (max-width:1150px){
+      max-width: 480px;
+    }
+    @media screen and (max-width:934px){
+      max-width: 380px;
+    }
+  }
 }
 .footer{
   background: #EFEFEF;
@@ -364,6 +647,12 @@ $transition: .3s;
     max-width: 229px;
     margin: 0 auto 50px 120px;
     padding-top: 80px;
+    @media screen and (max-width:1150px){
+      font-size: 22px;
+      margin-left: 60px;
+      padding-top: 40px;
+      margin-bottom: 30px;;
+    }
   }
   &__forms{
     background: #EFEFEF;
@@ -382,6 +671,11 @@ $transition: .3s;
     height: 50px;
     cursor: pointer;
     background: #EFEFEF;
+    @media screen and (max-width:1150px){
+      margin-left: 60px;
+      height: 40px;
+      width: 330px;
+    }
   }
   &__form::-webkit-input-placeholder {color:  #222222;  opacity: 0.7;}
   &__form::-moz-placeholder          {color:  #222222;  opacity: 0.7;}
@@ -403,6 +697,10 @@ $transition: .3s;
     color: #CFCFCF;
     margin: 100px auto 0 120px;
     padding-bottom: 60px;
+    @media screen and (max-width:1150px){
+      margin-left: 60px;
+      margin-top: 60px;
+    }
   }
 
   &__switch-box{
@@ -413,6 +711,10 @@ $transition: .3s;
     bottom: 80px;
     right: 120px;
     width: 140px;
+    @media screen and (max-width:1000px){
+      bottom: 40px;
+      right: 60px;
+    }
   }
 
   &__switch-btn {
