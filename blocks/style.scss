@@ -361,21 +361,25 @@ $transition: .3s;
   }
 
   &__img{
-    max-width: 588px;
+    max-width: 580px;
     max-height: 388px;
     margin-right: 40px;
-    @media screen and (max-width:1400px){
+    background-repeat: no-repeat;
+   /*  @media screen and (max-width:1438px){
       max-width: 543px;
     }
-    @media screen and (max-width:1220px){
-      max-width: 470px;
+    @media screen and (max-width:1364px){
+      max-width: 507px;
     }
-    @media screen and (max-width:1034px){
+    @media screen and (max-width:1292px){
+      max-width: 442px;
+    }
+    @media screen and (max-width:1036px){
       max-width: 370px;
     }
     @media screen and (max-width:802px){
       max-width: 320px;
-    }
+    } */
   }
   &__img:first-of-type{
     
@@ -560,7 +564,7 @@ $transition: .3s;
 }
 .training{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin: 150px 0 120px auto;
   &__text-block{
     margin-right: 40px;
@@ -636,15 +640,21 @@ $transition: .3s;
     display: flex;
   }
   &__img{
-    max-width: 650px;
+    max-width: 560px;
     @media screen and (max-width:1316px){
-      max-width: 580px;
+      max-width: 496px;
     }
     @media screen and (max-width:1150px){
       max-width: 480px;
     }
-    @media screen and (max-width:934px){
+    @media screen and (max-width:1079px){
+      max-width: 437px;
+    }
+    @media screen and (max-width:990px){
       max-width: 380px;
+    }
+    @media screen and (max-width:870px){
+      max-width: 340px;
     }
   }
 }
