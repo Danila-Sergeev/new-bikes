@@ -8,7 +8,24 @@
 
 .page {
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
+}
+.page__padding {
+  max-width: 1440px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+@media screen and (max-width: 1150px) {
+  .page__padding {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page__padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .header {
@@ -24,12 +41,6 @@
   min-width: 400px;
   display: flex;
   align-items: center;
-  margin-right: 120px;
-}
-@media screen and (max-width: 1150px) {
-  .header__list {
-    margin-right: 60px;
-  }
 }
 @media screen and (max-width: 1000px) {
   .header__list {
@@ -71,12 +82,10 @@
   line-height: 60px;
   max-width: 304px;
   margin-top: 80px;
-  margin-left: 120px;
 }
 @media screen and (max-width: 1150px) {
   .face__title {
     font-size: 50px;
-    margin-left: 60px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -84,6 +93,13 @@
     font-size: 42px;
     max-width: 250px;
     margin-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .face__title {
+    font-size: 40px;
+    max-width: 220px;
+    line-height: 52px;
   }
 }
 .face__subtitle {
@@ -96,13 +112,11 @@
   opacity: 0.7;
   max-width: 460px;
   margin-top: 50px;
-  margin-left: 120px;
 }
 @media screen and (max-width: 1150px) {
   .face__subtitle {
     font-size: 16px;
     max-width: 400px;
-    margin-left: 60px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -110,6 +124,13 @@
     font-size: 14px;
     max-width: 283px;
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .face__subtitle {
+    font-size: 12px;
+    max-width: 283px;
+    line-height: 25px;
   }
 }
 .face__button {
@@ -126,7 +147,6 @@
   width: 180px;
   height: 50px;
   margin-top: 38px;
-  margin-left: 120px;
   text-align: center;
   color: white;
   background-image: linear-gradient(#319E75, #319E75);
@@ -137,15 +157,9 @@
   cursor: pointer;
   z-index: 10;
 }
-@media screen and (max-width: 1150px) {
-  .face__button {
-    margin-left: 60px;
-  }
-}
 @media screen and (max-width: 1000px) {
   .face__button {
     margin-top: 30px;
-    margin-left: 60px;
   }
 }
 .face__button:hover {
@@ -162,7 +176,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  margin: 167px 30px 0 120px;
+  margin: 167px 30px 0 0;
 }
 @media screen and (max-width: 1150px) {
   .face__text {
@@ -171,7 +185,7 @@
 }
 @media screen and (max-width: 1000px) {
   .face__text {
-    margin: 55px 20px 0 60px;
+    margin: 55px 20px 0 0;
     font-size: 13px;
   }
 }
@@ -196,18 +210,24 @@
 .face__img {
   position: absolute;
   top: -68px;
-  right: 0;
+  right: -120px;
 }
 @media screen and (max-width: 1150px) {
   .face__img {
     max-width: 510px;
     max-height: 736px;
+    right: -60px;
   }
 }
 @media screen and (max-width: 1000px) {
   .face__img {
     max-width: 410px;
     max-height: 636px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .face__img {
+    right: -40px;
   }
 }
 .face__sticky {
@@ -255,16 +275,16 @@
 .drive__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin: 250px auto 60px 120px;
+  margin: 250px auto 60px 0;
 }
 @media screen and (max-width: 1150px) {
   .drive__container {
-    margin: 200px auto 60px 60px;
+    margin: 200px auto 60px 0;
   }
 }
 @media screen and (max-width: 1000px) {
   .drive__container {
-    margin: 75px auto 60px 60px;
+    margin: 75px auto 60px 0;
   }
 }
 .drive__img {
@@ -291,12 +311,10 @@
   justify-content: space-between;
   max-width: 400px;
   margin-left: 80px;
-  margin-right: 120px;
 }
 @media screen and (max-width: 1145px) {
   .drive__text-block {
     margin-left: 50px;
-    margin-right: 60px;
   }
 }
 @media screen and (max-width: 934px) {
@@ -388,11 +406,9 @@
   font-size: 55px;
   line-height: 60px;
   margin-top: 60px;
-  margin-left: 120px;
 }
 @media screen and (max-width: 1150px) {
   .types__title {
-    margin-left: 60px;
     font-size: 50px;
     margin-top: 30px;
   }
@@ -407,11 +423,9 @@
   line-height: 28px;
   color: #222222;
   opacity: 0.7;
-  margin-left: 120px;
 }
 @media screen and (max-width: 1150px) {
   .types__subtitle {
-    margin-left: 60px;
     font-size: 16px;
   }
 }
@@ -451,11 +465,11 @@
 }
 .types__control {
   top: calc(107% - var(--size) / 2);
-  left: 182px;
+  left: 104px;
 }
 @media screen and (max-width: 1150px) {
   .types__control {
-    left: 125px;
+    left: 88px;
   }
 }
 .types__control[data-slide=next] {
@@ -466,11 +480,11 @@
 }
 .types__control[data-slide=prev] {
   background: url(../img/Vector.svg) #EBEBEB no-repeat center;
-  left: 112px;
+  left: 12px;
 }
 @media screen and (max-width: 1150px) {
   .types__control[data-slide=prev] {
-    left: 58px;
+    left: 0;
   }
 }
 .types__control[data-slide=prev]:hover {
@@ -481,22 +495,27 @@
   margin-top: 120px;
 }
 .bikes__title {
-  margin-left: 120px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 55px;
   line-height: 60px;
+  margin-left: 120px;
 }
 @media screen and (max-width: 1150px) {
   .bikes__title {
-    margin-left: 60px;
     font-size: 50px;
+    margin-left: 60px;
   }
 }
 @media screen and (max-width: 882px) {
   .bikes__title {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bikes__title {
+    margin-left: 40px;
   }
 }
 .bikes__icon {
@@ -618,12 +637,6 @@
   justify-content: flex-end;
   max-width: 500px;
   margin: 0;
-  margin-right: 120px;
-}
-@media screen and (max-width: 1150px) {
-  .bikes__indicators {
-    margin-right: 60px;
-  }
 }
 @media screen and (max-width: 882px) {
   .bikes__indicators {
@@ -663,24 +676,13 @@
 .training {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin: 150px 120px 120px auto;
-}
-@media screen and (max-width: 1150px) {
-  .training {
-    margin-right: 60px;
-  }
+  margin: 150px 0 120px auto;
 }
 .training__text-block {
   margin-right: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 120px;
-}
-@media screen and (max-width: 1150px) {
-  .training__text-block {
-    margin-left: 60px;
-  }
 }
 .training__title {
   font-family: "Inter";
@@ -803,9 +805,14 @@
 @media screen and (max-width: 1150px) {
   .footer__title {
     font-size: 22px;
-    margin-left: 60px;
     padding-top: 40px;
     margin-bottom: 30px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__title {
+    margin-left: 40px;
   }
 }
 .footer__forms {
@@ -813,7 +820,6 @@
   position: relative;
 }
 .footer__form {
-  margin-left: 120px;
   border: 1px solid rgba(199, 199, 199, 0.5);
   border-radius: 4px;
   font-family: "Inter";
@@ -827,12 +833,18 @@
   cursor: pointer;
   background: #EFEFEF;
   padding: 0 20px;
+  margin-left: 120px;
 }
 @media screen and (max-width: 1150px) {
   .footer__form {
-    margin-left: 60px;
     height: 40px;
     width: 310px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__form {
+    margin-left: 40px;
   }
 }
 .footer__form::-webkit-input-placeholder {
@@ -876,8 +888,13 @@
 }
 @media screen and (max-width: 1150px) {
   .footer__name {
-    margin-left: 60px;
     margin-top: 60px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__name {
+    margin-left: 40px;
   }
 }
 .footer__switch-box {
