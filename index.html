@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="./pages/index.css">
   <script src="./scripts/slider.js" defer></script>
   <script src="./scripts/script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body class="body">
   <div class="page">
-    <div class="page__padding">
+    <div class="page__padding page__position">
         <div div class="header">
           <div class="header__list">
             <a href="#" class="header__link">Покрытия и градиенты</a>
@@ -52,7 +53,18 @@
           <div class="types__slider-container slider__container">
             <div class="types__slider-items slider__items">
               <div class="types__slider-item slider__item">
-                <h2 class="types__title">Шоссе</h2>
+                <div class="types__header">
+                  <h2 class="types__title">Шоссе</h2>
+                  <div class="types__controls">
+                    <button class="types__control slider__control types__control_on" data-slide="prev">
+                      <span class="sr-only">Go Left</span>
+                    </button>
+                    <button class="types__control slider__control types__control_on" data-slide="next">
+                      <span class="sr-only">Go Right</span>
+                    </button>
+                  </div>
+                </div>
+                <img src="./img/slider-road.png" alt="дорога" class="types__img types__img_on">
                 <p class="types__subtitle">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
                 <div class="types__images">
                   <img src="./img/slider-road.png" alt="дорога" class="types__img">
@@ -60,7 +72,18 @@
                 </div>
               </div>
               <div class="types__slider-item slider__item">
-                <h2 class="types__title">Грэвел</h2>
+                <div class="types__header">
+                  <h2 class="types__title">Грэвел</h2>
+                  <div class="types__controls">
+                    <button class="types__control slider__control types__control_on" data-slide="prev">
+                      <span class="sr-only">Go Left</span>
+                    </button>
+                    <button class="types__control slider__control types__control_on" data-slide="next">
+                      <span class="sr-only">Go Right</span>
+                    </button>
+                  </div>
+                </div>
+                <img src="./img/slider-country-road.png" alt="дорога" class="types__img types__img_on">
                 <p class="types__subtitle">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
                 <div class="types__images">
                   <img src="./img/slider-country-road.png" alt="дорога" class="types__img">
@@ -68,7 +91,18 @@
                 </div>
               </div>
               <div class="types__slider-item slider__item">
-                <h2 class="types__title">ТТ</h2>
+                <div class="types__header">
+                  <h2 class="types__title">ТТ</h2>
+                  <div class="types__controls">
+                    <button class="types__control slider__control types__control_on" data-slide="prev">
+                      <span class="sr-only">Go Left</span>
+                    </button>
+                    <button class="types__control slider__control types__control_on" data-slide="next">
+                      <span class="sr-only">Go Right</span>
+                    </button>
+                  </div>
+                </div>
+                <img src="./img/slider-asfalt.png" alt="дорога" class="types__img types__img_on">
                 <p class="types__subtitle">ТТ &ndash; это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
                 <div class="types__images">
                   <img src="./img/slider-asfalt.png" alt="дорога" class="types__img">
@@ -87,6 +121,17 @@
     </div>
       <section class="bikes">
         <h2 class="bikes__title">Велосипеды</h2>
+    
+        
+        <div class="wrapper">
+          <select class="editableBox bikes__box">        
+              <option class="bikes__link" value="1">Шоссе</option>
+              <option class="bikes__link" value="2">Грэвел</option>
+              <option class="bikes__link" value="3">ТТ</option>
+          </select>
+      </div>
+      
+
         <div class="slider" data-slider data-autoplay="false" data-interval="10000">
           <div class="slider__container bikes__slider-container">
             <div class="slider__items">
@@ -170,6 +215,7 @@
           <div class="training__text-block">
             <div class="training__main-text">
               <h2 class="training__title">Тренировки</h2>
+              <img src="./img/training.png" alt="трасса" class="training__img training__img_on">
               <p class="training__subtitle">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
             </div>
             <div class="training__apps">

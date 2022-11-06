@@ -25,14 +25,16 @@ $transition: .3s;
       padding-right: 40px;
     }
   }
+  &__position{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
 }
 .header{
   display: flex;
   flex-direction: row-reverse;
   height: 74px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
   @media screen and (max-width:768px){
     height: 60px;
   }
@@ -42,6 +44,9 @@ $transition: .3s;
     align-items: center;
     @media screen and (max-width:1000px){
       min-width: 340px
+    }
+    @media screen and (max-width:590px){
+      min-width: 290px
     }
   }
   &__link{
@@ -56,6 +61,9 @@ $transition: .3s;
     @media screen and (max-width:1000px){
       font-size: 12px;
       margin-right: 30px;
+    }
+    @media screen and (max-width:590px){
+      font-size: 10px;
     }
   }
   &__link:last-of-type{
@@ -94,6 +102,12 @@ $transition: .3s;
       max-width: 200px;
       line-height: 48px;
     }
+    @media screen and (max-width:590px){
+      font-size: 28px;
+      max-width: 173px;
+      line-height: 35px;
+      margin-top: 14px;
+    }
   }
   &__subtitle{
     font-family: $inter;
@@ -124,7 +138,12 @@ $transition: .3s;
       max-width: 250px;
       line-height: 20px;
     }
-   
+    @media screen and (max-width:590px){
+      font-size: 8px;
+      max-width: 173px;
+      line-height: 13px;
+      margin-top: 10px;
+    }
   }
   &__button{
     padding: 0;
@@ -159,6 +178,12 @@ $transition: .3s;
       height: 40px;
       font-size: 12px;
     }
+    @media screen and (max-width:590px){
+      width: 120px;
+      height: 30px;
+      font-size: 10px;
+      margin-top: 20px;
+    }
   }
   &__button:hover{
     background-size: 100% 100%;
@@ -169,6 +194,9 @@ $transition: .3s;
     top: 370px;
     @media screen and (max-width:713px){
       top: 278px
+    }
+    @media screen and (max-width:590px){
+      top: 191px
     }
   }
   &__text{
@@ -188,6 +216,9 @@ $transition: .3s;
     @media screen and (max-width:713px){
       font-size: 11px;
     }
+    @media screen and (max-width:590px){
+      font-size: 8px;
+    }
   }
   &__line{
     margin-top: 176px;
@@ -201,6 +232,9 @@ $transition: .3s;
     @media screen and (max-width:1000px){
       margin-top: 65px;
       width: 90px;
+    }
+    @media screen and (max-width:590px){
+      width: 70px;
     }
   }
   &__img{
@@ -218,13 +252,17 @@ $transition: .3s;
       max-height: 636px;
       top: -50px;
     }
-    @media screen and (max-width:760px){
+    @media screen and (max-width:769px){
       right: -40px;
       max-width: 380px;
       max-height: 610px;
     }
     @media screen and (max-width:713px){
       max-width: 316px;
+    }
+    @media screen and (max-width:590px){
+      max-width: 250px;
+      padding-top: 38px;
     }
 }
   &__sticky{
@@ -248,11 +286,14 @@ $transition: .3s;
     }
     @media screen and (max-width:1000px){
       max-width: 220px;
-      bottom: 50%;
+      bottom: 56%;
     }
     @media screen and (max-width:648px){
       max-width: 174px;
-      bottom: 60%;
+      bottom: 62%;
+    }
+    @media screen and (max-width:590px){
+      bottom: 72%;
     }
   }
   &__sticky-img{
@@ -273,7 +314,7 @@ $transition: .3s;
 .drive{
   &__container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200.5px, 1fr));
     margin: 250px auto 60px 0;
     @media screen and (max-width:1150px){
       margin: 200px auto 60px 0;
@@ -282,11 +323,14 @@ $transition: .3s;
       margin:122px auto 60px 0;
     }
     @media screen and (max-width:713px){
-      margin: 68px auto 60px 0;
+      margin: 68px auto 0 0;
     }
   }
   &__img{
     max-width: 100%;
+    @media screen and (max-width:480px){
+      margin: auto;
+    }
   }
   &__text-block{
     display: flex;
@@ -302,6 +346,12 @@ $transition: .3s;
       max-width: 350px;
       margin-left: 40px;
     }
+    @media screen and (max-width:480px){
+      margin: auto;
+      margin-top: 10px;
+      max-width: 100%;
+    }
+
   }
   &__title{
     font-family: $inter;
@@ -333,8 +383,15 @@ $transition: .3s;
       font-size:12px;
       line-height: 18px;
     }
-  }
+    @media screen and (max-width:480px){
 
+    }
+  }
+  &__name-block{
+    @media screen and (max-width:480px){
+      margin-top: 20px;
+    }
+  }
   &__name{
     font-family: $inter;
     font-style: normal;
@@ -354,6 +411,9 @@ $transition: .3s;
       font-size: 12px;
       line-height: 15px;
     }
+    @media screen and (max-width:480px){
+      font-size: 9px;
+    }
   }
   &__prof{
     font-family: $inter;
@@ -372,6 +432,10 @@ $transition: .3s;
     @media screen and (max-width:934px){
       font-size: 10px;
     }
+    @media screen and (max-width:480px){
+      font-size: 8px;
+      line-height: 20px;
+    }
   }
 }
 .types{
@@ -382,14 +446,16 @@ $transition: .3s;
     font-weight: 700;
     font-size: 55px;
     line-height: 60px;
-    margin-top: 60px;
+    //margin-top: 60px;
     @media screen and (max-width:1150px){
       font-size: 50px;
-      margin-top: 30px;
+     // margin-top: 30px;
     }
     @media screen and (max-width:700px){
-      font-size: 40px;
-    
+      font-size: 35px;
+    }
+    @media screen and (max-width:480px){
+      font-size: 30px;
     }
   }
   &__subtitle{
@@ -408,8 +474,17 @@ $transition: .3s;
     @media screen and (max-width:700px){
       margin-top: 20px;
     }
+    @media screen and (max-width:480px){
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
-
+  &__img_on{
+    display: none;
+    @media screen and (max-width:480px){
+      display: block;
+    }
+  }
   &__images{
     display: flex;
     justify-content:center;
@@ -417,6 +492,9 @@ $transition: .3s;
     min-width:0;
     @media screen and (max-width:700px){
       margin: 30px auto 0 auto;
+    }
+    @media screen and (max-width:480px){
+      display: none;
     }
   }
 
@@ -453,6 +531,10 @@ $transition: .3s;
     @media screen and (max-width:1150px){
       left: 88px;
     }
+    @media screen and (max-width:480px){
+      display: none;
+      left: 0;
+    }
   }
   &__control[data-slide='next'] {
     background: url(../img/Vector1.svg) #EBEBEB no-repeat center;
@@ -461,6 +543,10 @@ $transition: .3s;
       max-height: 20px;
       background: url(../img/mini-arrow-r.svg) #EBEBEB no-repeat center;
       left: 40px;
+      top: calc(110% - var(--size) / 2);
+    }
+    @media screen and (max-width:480px){
+      position: static;
     }
   }
   &__control[data-slide='next']:hover {
@@ -476,14 +562,41 @@ $transition: .3s;
       background: url(../img/mimi-arrow-l.svg) #EBEBEB no-repeat center;
       max-width: 20px;
       max-height: 20px;
+      top: calc(110% - var(--size) / 2);
+    }
+    @media screen and (max-width:480px){
+      position: static;
     }
   }
   &__control[data-slide='prev']:hover {
     opacity: .6;
   }
+  &__header{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width:1150px){
+      margin-top: 30px;
+    }
+  }
+  &__control_on{
+    display: none;
+    @media screen and (max-width:480px){
+      display: block;
+    }
+  }
+  &__controls{
+    display: flex;
+    min-width: 60px;
+    justify-content: space-between;
+  }
 }
 .bikes{
   margin-top: 120px;
+  @media screen and (max-width:700px){
+    margin-top: 60px;
+  }
   &__title{
     font-family: $inter;
     font-style: normal;
@@ -533,7 +646,7 @@ $transition: .3s;
     width: 380px;
     height: 380px;
     background: #F4F4F4;
-    box-shadow: 0 -16px 60px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 -4px 20px 4px rgba(0, 0, 0, 0.05);
     cursor: pointer;
     margin-bottom: 24px;
     @media screen and (max-width:1280px){
@@ -641,7 +754,7 @@ $transition: .3s;
     
     }
   }
-  &__indicator{
+  &__indicator{ 
     background-image: none;
     text-indent: 9px;
     width: 80px;
@@ -665,6 +778,9 @@ $transition: .3s;
     @media screen and (max-width:555px){
       padding-right: 3px;
     }
+    @media screen and (max-width:480px){
+      display: none;
+    }
   }
   &__indicator:last-of-type{
     @media screen and (max-width:555px){
@@ -674,18 +790,50 @@ $transition: .3s;
   &__indicator:hover{
     opacity: .6;
   }
-
+  &__box{
+    display: none;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    width: 114px;
+    height: 30px;
+    margin-left: 40px;
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    @media screen and (max-width:480px){
+      display: block;
+    }
+  }
+  &__link{
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+  }
 }
 .training{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 150px 0 120px auto;
+  @media screen and (max-width:955px){
+    margin: 80px 0 80px auto;
+  }
+  @media screen and (max-width:700px){
+    margin: 60px 0 60px auto;
+  }
+  @media screen and (max-width:588px){
+    margin: 40px 0 40px auto;
+  }
   &__text-block{
     margin-right: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media screen and (max-width:1150px){
+    @media screen and (max-width: 480px){
+      margin: 0 auto;
     }
   }
   &__title{
@@ -708,6 +856,9 @@ $transition: .3s;
     @media screen and (max-width: 705px){
       font-size: 20px;
       line-height: 29px;
+    }
+    @media screen and (max-width: 480px){
+      font-size: 18px;
     }
   }
   &__subtitle{
@@ -767,6 +918,11 @@ $transition: .3s;
     @media screen and (max-width: 705px){
       font-size: 10px;
     }
+    @media screen and (max-width: 480px){
+      margin-top: 12px;
+      font-size: 8px;
+      margin-right: 20px;
+    }
   }
   &__app:hover{
     opacity: 0.75;
@@ -776,6 +932,17 @@ $transition: .3s;
   }
   &__img{
     max-width: 100%;
+    @media screen and (max-width: 480px){
+      margin: auto;
+      margin-top: 12px;
+      display: none;
+    }
+  }
+  &__img_on{
+    display: none;
+    @media screen and (max-width: 480px){
+      display: block;
+    }
   }
 }
 .footer{
@@ -805,6 +972,11 @@ $transition: .3s;
       font-size: 20px;
       line-height: 28px;
       padding-top: 30px;
+    }
+    @media screen and (max-width:590px){
+      font-size: 18px;
+      line-height: 25px;
+      padding-top: 20px;
     }
   }
   &__forms{
@@ -838,6 +1010,12 @@ $transition: .3s;
       height: 40px;
       width: 240px;
     }
+    @media screen and (max-width:590px){
+      height:32px;
+      width: 178px;
+      font-size: 11px;
+      padding: 0 10px;
+    }
   }
   &__form::-webkit-input-placeholder {color:  #222222;  opacity: 0.7;}
   &__form::-moz-placeholder          {color:  #222222;  opacity: 0.7;}
@@ -868,6 +1046,10 @@ $transition: .3s;
     }
     @media screen and (max-width:720px){
       margin-top: 40px;
+    }
+    @media screen and (max-width:590px){
+      font-size: 12px;
+      padding-bottom: 45px;
     }
   }
 
@@ -954,6 +1136,15 @@ $transition: .3s;
     @media screen and (max-width:1150px){
       left: 356px;
       top: 9px;
+    }
+    @media screen and (max-width:720px){
+      left: 289px;
+      top: 9px;
+    }
+    @media screen and (max-width:590px){
+      left: 228px;
+      top: 2px;
+      font-size: 10px;
     }
   }
   &__form-button_on{

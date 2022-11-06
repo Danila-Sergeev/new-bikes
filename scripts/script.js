@@ -23,6 +23,14 @@ let footer = document.querySelector('.footer');
   }); */
 
 
+  
+
+  $(document).ready(function(){
+   
+    $(".editableBox").change(function(){         
+        $(".timeTextBox").val($(".editableBox option:selected").html());
+    });
+});
  
 
   
