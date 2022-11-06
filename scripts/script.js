@@ -23,14 +23,17 @@ let footer = document.querySelector('.footer');
   }); */
 
 
-  
+let bikesBtn = document.querySelector(".bikes__button");
+let bikesLink = document.querySelector(".bikes__links");
+let bikesL1 = document.querySelector('#link1');
+let bikesItem = document.querySelector('.bikes__item');
+let bikesIcon = document.querySelector('.bikes__icon');
+let bikesCont = document.querySelector('.bikes__img-cont');
 
-  $(document).ready(function(){
-   
-    $(".editableBox").change(function(){         
-        $(".timeTextBox").val($(".editableBox option:selected").html());
-    });
-});
- 
-
-  
+bikesBtn.addEventListener('click', () =>{
+  bikesLink.classList.toggle('bikes__links_open')
+})
+bikesL1.addEventListener('click', () => {
+  bikesItem.classList.remove('slider__item');
+  bikesIcon.classList.add('slider__items');
+})
