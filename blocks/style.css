@@ -283,11 +283,16 @@
   align-items: center;
   justify-content: center;
   left: 50%;
-  bottom: 30%;
+  bottom: 60%;
   background: #F4F4F4;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
   border-radius: 20px;
   z-index: 10;
+}
+@media screen and (max-width: 1440px) {
+  .face__sticky {
+    bottom: 38%;
+  }
 }
 @media screen and (max-width: 1150px) {
   .face__sticky {
@@ -996,6 +1001,13 @@
     margin-left: 40px;
   }
 }
+@media screen and (max-width: 720px) {
+  .footer__title {
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 30px;
+  }
+}
 .footer__forms {
   background: #EFEFEF;
   position: relative;
@@ -1026,6 +1038,12 @@
 @media screen and (max-width: 768px) {
   .footer__form {
     margin-left: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__form {
+    height: 40px;
+    width: 240px;
   }
 }
 .footer__form::-webkit-input-placeholder {
@@ -1078,6 +1096,11 @@
     margin-left: 40px;
   }
 }
+@media screen and (max-width: 720px) {
+  .footer__name {
+    margin-top: 40px;
+  }
+}
 .footer__switch-box {
   background: #EFEFEF;
   display: flex;
@@ -1091,6 +1114,11 @@
   .footer__switch-box {
     bottom: 40px;
     right: 60px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__switch-box {
+    width: 104px;
   }
 }
 .footer__switch-btn {
@@ -1107,6 +1135,12 @@
   position: relative;
   transition-duration: 300ms; /* анимация */
 }
+@media screen and (max-width: 720px) {
+  .footer__switch-btn {
+    width: 43px;
+    height: 19px;
+  }
+}
 .footer__switch-btn::after {
   content: "";
   height: 20px; /* высота кнопки */
@@ -1119,6 +1153,12 @@
   position: absolute;
   z-index: 1;
 }
+@media screen and (max-width: 720px) {
+  .footer__switch-btn::after {
+    width: 16px;
+    height: 16px;
+  }
+}
 .footer__switch-on {
   background: #FFFFFF;
 }
@@ -1127,6 +1167,11 @@
 }
 .footer__icon {
   background: #EFEFEF;
+}
+@media screen and (max-width: 720px) {
+  .footer__icon {
+    width: 20px;
+  }
 }
 .footer__form-button {
   display: none;

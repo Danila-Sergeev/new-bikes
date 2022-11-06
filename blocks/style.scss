@@ -234,11 +234,14 @@ $transition: .3s;
     align-items: center;
     justify-content: center;
     left: 50%;
-    bottom: 30%;
+    bottom: 60%;
     background: #F4F4F4;
     box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
     border-radius: 20px;
     z-index: 10;
+    @media screen and (max-width:1440px){
+      bottom: 38%;
+    }
     @media screen and (max-width:1150px){
       max-width: 290px;
       bottom: 40%;
@@ -371,7 +374,6 @@ $transition: .3s;
     }
   }
 }
-
 .types{
   display: flex;
   &__title{
@@ -799,6 +801,11 @@ $transition: .3s;
     @media screen and (max-width:768px){
       margin-left: 40px;
     }
+    @media screen and (max-width:720px){
+      font-size: 20px;
+      line-height: 28px;
+      padding-top: 30px;
+    }
   }
   &__forms{
     background: #EFEFEF;
@@ -826,6 +833,10 @@ $transition: .3s;
     }
     @media screen and (max-width:768px){
       margin-left: 40px;
+    }
+    @media screen and (max-width:720px){
+      height: 40px;
+      width: 240px;
     }
   }
   &__form::-webkit-input-placeholder {color:  #222222;  opacity: 0.7;}
@@ -855,6 +866,9 @@ $transition: .3s;
     @media screen and (max-width:768px){
       margin-left: 40px;
     }
+    @media screen and (max-width:720px){
+      margin-top: 40px;
+    }
   }
 
   &__switch-box{
@@ -868,6 +882,9 @@ $transition: .3s;
     @media screen and (max-width:1000px){
       bottom: 40px;
       right: 60px;
+    }
+    @media screen and (max-width:720px){
+      width: 104px;
     }
   }
 
@@ -884,6 +901,10 @@ $transition: .3s;
     cursor: pointer;
     position: relative;
     transition-duration: 300ms; /* анимация */
+    @media screen and (max-width:720px){
+      width: 43px;
+      height: 19px
+    }
   }
   &__switch-btn::after {
     content: "";
@@ -896,6 +917,11 @@ $transition: .3s;
     transition-duration: 300ms; /* анимация */
     position: absolute;
     z-index: 1;
+    @media screen and (max-width:720px){
+      width: 16px;
+      height: 16px;
+
+    }
   }
   &__switch-on {
     background: #FFFFFF;;
@@ -905,6 +931,9 @@ $transition: .3s;
   }
   &__icon{
     background: #EFEFEF;
+    @media screen and (max-width:720px){
+      width: 20px;
+    }
   }
   &__form-button{
     display: none;
