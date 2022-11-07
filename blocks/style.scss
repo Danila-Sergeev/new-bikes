@@ -24,6 +24,10 @@ $transition: .3s;
       padding-left: 40px;
       padding-right: 40px;
     }
+    @media screen and (max-width:420px){
+      padding-left: 18px;
+      padding-right: 18px;
+    }
   }
   &__position{
     position: sticky;
@@ -104,7 +108,7 @@ $transition: .3s;
     }
     @media screen and (max-width:590px){
       font-size: 28px;
-      max-width: 173px;
+      max-width: 150px;
       line-height: 35px;
       margin-top: 14px;
     }
@@ -143,6 +147,9 @@ $transition: .3s;
       max-width: 173px;
       line-height: 13px;
       margin-top: 10px;
+    }
+    @media screen and (max-width:467px){
+      max-width: 156px;
     }
   }
   &__button{
@@ -198,6 +205,9 @@ $transition: .3s;
     @media screen and (max-width:590px){
       top: 191px
     }
+    @media screen and (max-width:467px){
+      top: 225px
+    }
   }
   &__text{
     font-family: $inter;
@@ -219,6 +229,9 @@ $transition: .3s;
     @media screen and (max-width:590px){
       font-size: 8px;
     }
+    @media screen and (max-width:467px){
+      margin: 21px 6px 0 0;
+    }
   }
   &__line{
     margin-top: 176px;
@@ -235,6 +248,10 @@ $transition: .3s;
     }
     @media screen and (max-width:590px){
       width: 70px;
+    }
+    @media screen and (max-width:467px){
+      margin-top: 30px;
+      width: 60px;
     }
   }
   &__img{
@@ -263,6 +280,12 @@ $transition: .3s;
     @media screen and (max-width:590px){
       max-width: 250px;
       padding-top: 38px;
+    }
+    @media screen and (max-width:467px){
+      max-width: 209px;
+    }
+    @media screen and (max-width:420px){
+      right: -18px;
     }
 }
   &__sticky{
@@ -295,6 +318,13 @@ $transition: .3s;
     @media screen and (max-width:590px){
       bottom: 72%;
     }
+    @media screen and (max-width:467px){
+      bottom: 68%;
+      max-width: 135px;
+    }
+  }
+  &__stycky_off{
+    display: none;
   }
   &__sticky-img{
     border-radius: 20px;
@@ -308,6 +338,9 @@ $transition: .3s;
     }
     @media screen and (max-width:648px){
       max-width: 129px;
+    }
+    @media screen and (max-width:467px){
+      max-width: 103px;
     }
   }
 }
@@ -348,7 +381,7 @@ $transition: .3s;
     }
     @media screen and (max-width:480px){
       margin: auto;
-      margin-top: 10px;
+      margin-top: 40px;
       max-width: 100%;
     }
 
@@ -384,12 +417,13 @@ $transition: .3s;
       line-height: 18px;
     }
     @media screen and (max-width:480px){
-
+      font-size: 23px;
+      line-height: 29px;
     }
   }
   &__name-block{
     @media screen and (max-width:480px){
-      margin-top: 20px;
+      margin-top: 40px;
     }
   }
   &__name{
@@ -412,7 +446,8 @@ $transition: .3s;
       line-height: 15px;
     }
     @media screen and (max-width:480px){
-      font-size: 9px;
+      font-size: 14px;
+      line-height: 40px;
     }
   }
   &__prof{
@@ -433,8 +468,8 @@ $transition: .3s;
       font-size: 10px;
     }
     @media screen and (max-width:480px){
-      font-size: 8px;
-      line-height: 20px;
+      font-size: 10px;
+      line-height: 16px;
     }
   }
 }
@@ -455,7 +490,8 @@ $transition: .3s;
       font-size: 35px;
     }
     @media screen and (max-width:480px){
-      font-size: 30px;
+      font-size: 32px;
+      line-height: 40px;
     }
   }
   &__subtitle{
@@ -475,8 +511,9 @@ $transition: .3s;
       margin-top: 20px;
     }
     @media screen and (max-width:480px){
-      font-size: 14px;
-      line-height: 22px;
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 40px;
     }
   }
   &__img_on{
@@ -503,24 +540,9 @@ $transition: .3s;
     margin-right: 40px;
     min-width:0;
     background-repeat: no-repeat;
-   /*  @media screen and (max-width:1438px){
-      max-width: 543px;
+    @media screen and (max-width:480px){
+      margin-top: 40px;
     }
-    @media screen and (max-width:1364px){
-      max-width: 507px;
-    }
-    @media screen and (max-width:1292px){
-      max-width: 442px;
-    }
-    @media screen and (max-width:1036px){
-      max-width: 370px;
-    }
-    @media screen and (max-width:802px){
-      max-width: 320px;
-    } */
-  }
-  &__img:first-of-type{
-    
   }
   &__img:last-of-type{
     margin-right: 0;
@@ -577,7 +599,7 @@ $transition: .3s;
     justify-content: space-between;
     align-items: center;
     @media screen and (max-width:1150px){
-      margin-top: 30px;
+      margin-top: 100px;
     }
   }
   &__control_on{
@@ -619,6 +641,9 @@ $transition: .3s;
     }
     @media screen and (max-width:587px){
       font-size: 28px;
+    }
+    @media screen and (max-width:420px){
+      margin-left: 18px;
     }
   }
   &__icon{
@@ -677,6 +702,7 @@ $transition: .3s;
       margin-bottom: -3px;
     }
     @media screen and (max-width:480px){
+      flex-direction: column;
       width: 100%;
       height: 90%;
       margin-bottom: 10px;
@@ -714,10 +740,15 @@ $transition: .3s;
     @media screen and (max-width:480px){
       width: 95%;
       height: 95%;
+      margin-top: 14px;
+      margin-left: 10px;
     }
   }
   &__img:first-of-type{
     margin-left: 0;
+    @media screen and (max-width:480px){
+      margin-left: 10px;
+    }
   }
   &__text{
     font-family: $inter;
@@ -737,6 +768,7 @@ $transition: .3s;
     }
     @media screen and (max-width:480px){
       font-size: 15px;
+      padding-bottom: 35px;
     }
   }
   &__indicators{
@@ -806,22 +838,6 @@ $transition: .3s;
   &__indicator:hover{
     opacity: .6;
   }
-  &__box{
-    display: none;
-    border: 1px solid #E3E3E3;
-    border-radius: 2px;
-    width: 114px;
-    height: 30px;
-    margin-left: 40px;
-    font-family: $inter;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 14px;
-    @media screen and (max-width:480px){
-      display: block;
-    }
-  }
   &__links{
     display: none;
     z-index: -1000;
@@ -832,25 +848,29 @@ $transition: .3s;
     opacity: 0;
     padding: 0;
     width: 114px;
-    background: #F4F4F4;
-    box-shadow: 0 -20px 20px 4px rgba(0, 0, 0, 0.05);
+    background:#CFCFCF;
+    box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.05);
     border-radius: 5%;
     transition: .5s;
     @media screen and (max-width:480px){
       display: block;
     }
+    @media screen and (max-width:420px){
+      margin-left: 18px;
+    }
   }
   &__link{
     padding: 0;
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 8px;
     list-style: none;
     font-family: $inter;
     font-style: normal;
     font-weight: 600;
     font-size: 11px;
     line-height: 14px;
-    background: #F4F4F4;
+    cursor: pointer;
+    height: 21px;
   }
   &__link:hover{
     opacity: .8;
@@ -883,6 +903,9 @@ $transition: .3s;
     @media screen and (max-width:480px){
       display: block;
     }
+    @media screen and (max-width:420px){
+      margin-left: 18px;
+    }
   }
   &__slider-big{
     display: block;
@@ -902,8 +925,9 @@ $transition: .3s;
       display: flex;
     }
   }
-  &__item_active{
-    display: none;
+  &__slider_active{
+   opacity: 0;
+   height: 0;
   }
 }
 .training{
@@ -950,7 +974,8 @@ $transition: .3s;
       line-height: 29px;
     }
     @media screen and (max-width: 480px){
-      font-size: 18px;
+      font-size: 32px;
+      line-height: 40px;
     }
   }
   &__subtitle{
@@ -989,6 +1014,11 @@ $transition: .3s;
     @media screen and (max-width: 504px){
       line-height: 12px;
     }
+    @media screen and (max-width: 480px){
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 40px;
+    }
   }
   &__app{
     font-family: 'Inter';
@@ -1012,7 +1042,8 @@ $transition: .3s;
     }
     @media screen and (max-width: 480px){
       margin-top: 12px;
-      font-size: 8px;
+      font-size: 14px;
+      line-height: 60px;
       margin-right: 20px;
     }
   }
@@ -1026,7 +1057,7 @@ $transition: .3s;
     max-width: 100%;
     @media screen and (max-width: 480px){
       margin: auto;
-      margin-top: 12px;
+      margin-top: 40px;
       display: none;
     }
   }
@@ -1070,6 +1101,9 @@ $transition: .3s;
       line-height: 25px;
       padding-top: 20px;
     }
+    @media screen and (max-width:420px){
+      margin-left: 18px;
+    }
   }
   &__forms{
     background: #EFEFEF;
@@ -1108,6 +1142,9 @@ $transition: .3s;
       font-size: 11px;
       padding: 0 10px;
     }
+    @media screen and (max-width:420px){
+      margin-left: 18px;
+    }
   }
   &__form::-webkit-input-placeholder {color:  #222222;  opacity: 0.7;}
   &__form::-moz-placeholder          {color:  #222222;  opacity: 0.7;}
@@ -1142,6 +1179,9 @@ $transition: .3s;
     @media screen and (max-width:590px){
       font-size: 12px;
       padding-bottom: 45px;
+    }
+    @media screen and (max-width:420px){
+      margin-left: 18px;
     }
   }
 

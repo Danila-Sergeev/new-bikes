@@ -26,14 +26,33 @@ let footer = document.querySelector('.footer');
 let bikesBtn = document.querySelector(".bikes__button");
 let bikesLink = document.querySelector(".bikes__links");
 let bikesL1 = document.querySelector('#link1');
+let bikesL2 = document.querySelector('#link2');
+let bikesL3 = document.querySelector('#link3');
 let bikesItem = document.querySelector('.bikes__item');
 let bikesIcon = document.querySelector('.bikes__icon');
 let bikesCont = document.querySelector('.bikes__img-cont');
+let sliderMiniFst = document.querySelector('#slider_1')
+let sliderMiniSnd = document.querySelector('#slider_2')
+let sliderMiniThd = document.querySelector('#slider_3')
 
 bikesBtn.addEventListener('click', () =>{
   bikesLink.classList.toggle('bikes__links_open')
 })
 bikesL1.addEventListener('click', () => {
-  bikesItem.classList.remove('slider__item');
-  bikesIcon.classList.add('slider__items');
+  sliderMiniFst.classList.remove('bikes__slider_active');
+  sliderMiniSnd.classList.add('bikes__slider_active');
+  sliderMiniThd.classList.add('bikes__slider_active');
+  bikesLink.classList.toggle('bikes__links_open')
+})
+bikesL2.addEventListener('click', () => {
+  sliderMiniSnd.classList.remove('bikes__slider_active');
+  sliderMiniFst.classList.add('bikes__slider_active');
+  sliderMiniThd.classList.add('bikes__slider_active');
+  bikesLink.classList.toggle('bikes__links_open')
+})
+bikesL3.addEventListener('click', () => {
+  sliderMiniThd.classList.remove('bikes__slider_active');
+  sliderMiniSnd.classList.add('bikes__slider_active');
+  sliderMiniFst.classList.add('bikes__slider_active');
+  bikesLink.classList.toggle('bikes__links_open')
 })

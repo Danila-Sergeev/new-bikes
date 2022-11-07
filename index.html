@@ -25,6 +25,7 @@
         <section class="face">
           <h1 class="face__title">Шоссе, ТТ 
             и Грэвел</h1>
+            <img src="./img/Placeholder.png" alt="Дорога" class="face__img">
           <h2 class="face__subtitle">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам &ndash; нужно только определиться с выбором велосипеда и отправиться в путь.</h2>
           <button class='face__button'>Подробнее</button>
           <div class="face__sticky">
@@ -34,7 +35,7 @@
             <p class="face__text">Cannondale Systemsix</p>
             <dv class="face__line"></dv>
           </div>
-          <img src="./img/Placeholder.png" alt="Дорога" class="face__img">
+          <img src="./img/Placeholder.png" alt="Дорога" class="face__img face__stycky_off">
         </section>
         <section class="drive">
           <div class="drive__container">
@@ -126,8 +127,8 @@
       <button class="bikes__button">Шоссе</button>
       <ul class="bikes__links">
         <li class="bikes__link" id="link1">Шоссе</li>
-        <li class="bikes__link" id="link1">Грэвел</li>
-        <li class="bikes__link" id="link1">ТТ</li>
+        <li class="bikes__link" id="link2">Грэвел</li>
+        <li class="bikes__link" id="link3">ТТ</li>
       </ul>
     </div>
       
@@ -197,99 +198,6 @@
               </div>
             </div>
           </div>
-        </div>
-
-
-          <div class="slider bikes__slider-mini" data-slider data-autoplay="false" data-interval="10000">
-            <div class="slider__container bikes__slider-container">
-              <div class="slider__items bikes__item_active">
-                <div class="slider__item bikes__item">
-                  <div class="bikes__icon">
-                    <a href="" class="bikes__img-cont">
-                      <img src="./img/bikes-1.png" alt="велосипед" class="bikes__img">
-                      <a href="" class="bikes__text">Cervelo Caledonia-5</a>
-                    </a>
-                  </div>
-                </div>
-                <div class="slider__item bikes__item">
-                  <div class="bikes__icon">
-                    <a href="" class="bikes__img-cont">
-                      <img src="./img/bikes-2.png" alt="велосипед" class="bikes__img">
-                      <a href="" class="bikes__text">Cannondale Systemsix Himod</a>
-                    </a>
-                  </div>
-                </div>
-                <div class="slider__item bikes__item">
-                  <div class="bikes__icon">
-                    <a href="" class="bikes__img-cont">
-                      <img src="./img/bikes-3.png" alt="велосипед" class="bikes__img">
-                    </a>
-                    <a href="" class="bikes__text">Trek Domane SL-7</a>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__items ">
-                <div class="slider__item bikes__item">
-                  <div class="bikes__icon">
-                    <a href="" class="bikes__img-cont">
-                      <img src="./img/bikes-1.png" alt="велосипед" class="bikes__img">
-                      <a href="" class="bikes__text">Cervelo Caledonia-5</a>
-                    </a>
-                  </div>
-                </div>
-                <div class="slider__item bikes__item">
-                  <div class="bikes__icon">
-                    <a href="" class="bikes__img-cont">
-                      <img src="./img/bikes-2.png" alt="велосипед" class="bikes__img">
-                    </a>
-                    <a href="" class="bikes__text">Cannondale Systemsix Himod</a>
-                  </div>
-                </div>
-                <div class="slider__item bikes__item">
-                  <div class="bikes__icon">
-                    <a href="" class="bikes__img-cont">
-                      <img src="./img/bikes-3.png" alt="велосипед" class="bikes__img">
-                    </a>
-                    <a href="" class="bikes__text">Trek Domane SL-7</a>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__items bikes__item_active">
-                <div class="slider__item bikes__item">
-                  <div class="bikes__icon">
-                    <a href="" class="bikes__img-cont">
-                      <img src="./img/bikes-1.png" alt="велосипед" class="bikes__img">
-                    </a>
-                    <a href="" class="bikes__text">Cervelo Caledonia-5</a>
-                  </div>
-                </div>
-                <div class="slider__item bikes__item">
-                  <div class="bikes__icon">
-                    <a href="" class="bikes__img-cont">
-                      <img src="./img/bikes-2.png" alt="велосипед" class="bikes__img">
-                    </a>
-                    <a href="" class="bikes__text">Cannondale Systemsix Himod</a>
-                  </div>
-                </div>
-                <div class="slider__item bikes__item">
-                  <div class="bikes__icon">
-                    <a href="" class="bikes__img-cont">
-                      <img src="./img/bikes-3.png" alt="велосипед" class="bikes__img">
-                    </a>
-                    <a href="" class="bikes__text">Trek Domane SL-7</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <ol class="slider__indicators bikes__indicators">
-              <li class="slider__indicator " data-slide-to="0"></li>
-              <li class="slider__indicator" data-slide-to="1"></li>
-              <li class="slider__indicator" data-slide-to="2"></li>
-            </ol>
-          </div>
-                
-
-            
           <button class="slider__control bikes__control" data-slide="prev">
             <span class="sr-only">Go Left</span>
           </button>
@@ -300,6 +208,133 @@
             <li class="slider__indicator bikes__indicator" data-slide-to="0">Шоссе</li>
             <li class="slider__indicator bikes__indicator" data-slide-to="1">Грэвел</li>
             <li class="slider__indicator bikes__indicator" data-slide-to="2">TT</li>
+          </ol>
+        </div>
+
+
+        <div class="slider bikes__slider-mini" id="slider_1" data-slider data-autoplay="false" data-interval="10000">
+          <div class="slider__container bikes__slider-container">
+            <div class="slider__items ">
+              <div class="slider__item bikes__item">
+                <div class="bikes__icon">
+                  <div class="bikes__img-cont">
+                    <a href="" class="">
+                    <img src="./img/bikes-1.png" alt="велосипед" class="bikes__img">
+                    <a href="" class="bikes__text">Cervelo Caledonia-5</a>
+                    </a>
+                   </div>
+                </div>
+              </div>
+              <div class="slider__item bikes__item">
+                <div class="bikes__icon">
+                  <div class="bikes__img-cont">
+                    <a href="" >
+                    <img src="./img/bikes-2.png" alt="велосипед" class="bikes__img">
+                    <a href="" class="bikes__text">Cannondale Systemsix Himod</a>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item bikes__item">
+                <div class="bikes__icon">
+                  <div class="bikes__img-cont">
+                    <a href="" class="">
+                    <img src="./img/bikes-3.png" alt="велосипед" class="bikes__img">
+                    <a href="" class="bikes__text">Trek Domane SL-7</a>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="slider__indicators bikes__indicators">
+            <li class="slider__indicator " data-slide-to="0"></li>
+            <li class="slider__indicator" data-slide-to="1"></li>
+            <li class="slider__indicator" data-slide-to="2"></li>
+          </ol>
+        </div>
+
+        <div class="slider bikes__slider-mini bikes__slider_active" id="slider_2" data-slider data-autoplay="false" data-interval="10000">
+          <div class="slider__container bikes__slider-container">
+            <div class="slider__items ">
+              <div class="slider__item bikes__item">
+                <div class="bikes__icon">
+                  <div class="bikes__img-cont">
+                    <a href="" >
+                    <img src="./img/bikes-4.png" alt="велосипед" class="bikes__img">
+                    <a href="" class="bikes__text">Cervelo Aspero GRX 810</a>
+                  </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item bikes__item">
+                <div class="bikes__icon">
+                  <div class="bikes__img-cont">
+                    <a href="" >
+                      <img src="./img/bikes-5.png" alt="велосипед" class="bikes__img">
+                      <a href="" class="bikes__text">Specialized S-Works Diverge</a>
+                    </a>
+                </div>
+                </div>
+              </div>
+              <div class="slider__item bikes__item">
+                <div class="bikes__icon">
+                  <div class="bikes__img-cont">
+                    <a href="">
+                      <img src="./img/bikes-6.png" alt="велосипед" class="bikes__img">
+                      <a href="" class="bikes__text">Cannondale Topstone Lefty 3</a>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="slider__indicators bikes__indicators">
+            <li class="slider__indicator " data-slide-to="0"></li>
+            <li class="slider__indicator" data-slide-to="1"></li>
+            <li class="slider__indicator" data-slide-to="2"></li>
+          </ol>
+        </div>
+        
+        <div class="slider bikes__slider-mini  bikes__slider_active"id="slider_3" data-slider data-autoplay="false" data-interval="10000">
+          <div class="slider__container bikes__slider-container">
+            <div class="slider__items ">
+              <div class="slider__item bikes__item">
+                <div class="bikes__icon">
+                  <div class="bikes__img-cont">
+                    <a href="">
+                      <img src="./img/bikes-7.png" alt="велосипед" class="bikes__img">
+                      <a href="" class="bikes__text">Specialized S-Works Shiv</a>
+                    </a>
+                </div>
+                </div>
+              </div>
+              <div class="slider__item bikes__item">
+                <div class="bikes__icon">
+                  <div class="bikes__img-cont">
+                    <a href="" class="bikes__img-cont">
+                      <img src="./img/bikes-8.png" alt="велосипед" class="bikes__img">
+                      <a href="" class="bikes__text">BMC Timemachine 01 ONE</a>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item bikes__item">
+                <div class="bikes__icon">
+                  <div class="bikes__img-cont">
+                    <a href="">
+                      <img src="./img/bikes-9.png" alt="велосипед" class="bikes__img">
+                      <a href="" class="bikes__text">Cervelo P-Series</a>
+                    </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="slider__indicators bikes__indicators">
+            <li class="slider__indicator " data-slide-to="0"></li>
+            <li class="slider__indicator" data-slide-to="1"></li>
+            <li class="slider__indicator" data-slide-to="2"></li>
           </ol>
         </div>
       </section>
