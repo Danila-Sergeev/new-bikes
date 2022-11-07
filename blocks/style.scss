@@ -3,6 +3,7 @@ $main_color: #151515;
 $inter : 'Inter';
 $opacity : .75;
 $transition: .3s;
+$backgroude_black: #333333;
 *{
   background: #F4F4F4;
   color: $main_color;
@@ -35,6 +36,13 @@ $transition: .3s;
     position: sticky;
     top: 0;
     z-index: 100;
+  }
+}
+.black-theme{
+  background: $backgroude_black;
+  *{
+    color: #FFFFFF;
+    background: $backgroude_black;
   }
 }
 .header{
@@ -443,7 +451,7 @@ $transition: .3s;
       padding-top: 0;
       right: 0;
     }
-}
+  }
   &__sticky{
     max-width: 440px;
     position:sticky;
@@ -1420,7 +1428,7 @@ $transition: .3s;
     position: relative;
     transition-duration: 300ms; /* анимация */
     @media screen and (max-width:720px){
-      width: 43px;
+      width: 39px;
       height: 19px
     }
     @media screen and (max-width:480px){
@@ -1443,13 +1451,14 @@ $transition: .3s;
       width: 16px;
       height: 16px;
     }
-    @media screen and (max-width:720px){
+    @media screen and (max-width:480px){
       width: 20px;
       height: 20px;
     }
   }
   &__switch-on {
-    background: #FFFFFF;;
+
+    background: #FFFFFF;
   }
   &__switch-on::after {
     left: 2px;
@@ -1504,5 +1513,29 @@ $transition: .3s;
   }
   input:focus::placeholder {
     color: transparent;
+  }
+}
+.footer_darck{
+  background: #2F2F2F;
+  .footer__form-button{
+    background: #2F2F2F;
+  }
+  .footer__icon{
+    background: #2F2F2F;
+  }
+  .footer__switch-box{
+    background: #2F2F2F;
+  }
+  .footer__name{
+    background: #2F2F2F;
+  }
+  .footer__form{
+    background: #2F2F2F;
+  }
+  .footer__forms{
+    background: #2F2F2F;
+  }
+  .footer__title{
+    background: #2F2F2F;
   }
 }
