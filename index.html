@@ -18,6 +18,28 @@
             <a href="#" class="header__link">Велосипеды</a>
             <a href="#" class="header__link">Тренировки</a>
           </div>
+
+
+          <div class="header__burger-menu">
+            <span class="header__burger-line"></span>
+          </div>
+          <div class="header__menu-сontainer">
+            <nav class="header__menu">
+              <button class="header__button-close" type="button">
+                <img class="header__close-icon" src="./img/close_dialogue_icon — копия.svg" alt="х">
+              </button>
+              <ul class="header__link-container">
+                <li class="header__link-item"><a class="header__link" href="#" title="Для НКО">Покрытия и градиенты</a></li>
+                <li class="header__link-item"><a class="header__link" href="#" title="Для бизнеса">Велосипеды</a></li>
+                <li class="header__link-item"><a class="header__link" href="#" title="Блог">Тренировки</a></li>
+              </ul>
+            </nav>
+            <div class="footer__switch-box footer__switch-box_on">
+              <img src="./img/sun.svg" alt="солнце" class="footer__icon">
+              <div class="footer__switch-btn footer__switch-on"></div>
+              <img src="./img/moon.svg" alt="луна" class="footer__icon">
+            </div>
+          </div>
         </div>
     </div>
       <div class="content">
@@ -25,7 +47,7 @@
         <section class="face">
           <h1 class="face__title">Шоссе, ТТ 
             и Грэвел</h1>
-            <img src="./img/Placeholder.png" alt="Дорога" class="face__img">
+          <img src="./img/Placeholder.png" alt="Дорога" class="face__img">
           <h2 class="face__subtitle">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам &ndash; нужно только определиться с выбором велосипеда и отправиться в путь.</h2>
           <button class='face__button'>Подробнее</button>
           <div class="face__sticky">
@@ -35,7 +57,7 @@
             <p class="face__text">Cannondale Systemsix</p>
             <dv class="face__line"></dv>
           </div>
-          <img src="./img/Placeholder.png" alt="Дорога" class="face__img face__stycky_off">
+          <img src="./img/Placeholder.png" alt="Дорога" class="face__img face__img_off">
         </section>
         <section class="drive">
           <div class="drive__container">
@@ -121,16 +143,16 @@
     </div>
       <section class="bikes">
         <h2 class="bikes__title">Велосипеды</h2>
-    
-
-    <div class="bikes__slide">
-      <button class="bikes__button">Шоссе</button>
-      <ul class="bikes__links">
-        <li class="bikes__link" id="link1">Шоссе</li>
-        <li class="bikes__link" id="link2">Грэвел</li>
-        <li class="bikes__link" id="link3">ТТ</li>
-      </ul>
-    </div>
+        <div class="bikes__slide">
+          <button class="bikes__button">Шоссе
+            <img src="./img/Vector-slider.png" class="bikes__arrow" alt="">
+          </button>
+          <ul class="bikes__links">
+            <li class="bikes__link" id="link1">Шоссе</li>
+            <li class="bikes__link" id="link2">Грэвел</li>
+            <li class="bikes__link" id="link3">ТТ</li>
+          </ul>
+        </div>
       
 
         <div class="slider bikes__slider-big" data-slider data-autoplay="false" data-interval="10000">
@@ -248,9 +270,9 @@
             </div>
           </div>
           <ol class="slider__indicators bikes__indicators">
-            <li class="slider__indicator " data-slide-to="0"></li>
-            <li class="slider__indicator" data-slide-to="1"></li>
-            <li class="slider__indicator" data-slide-to="2"></li>
+            <li class="slider__indicator bikes__indicator_mini" data-slide-to="0"></li>
+            <li class="slider__indicator bikes__indicator_mini" data-slide-to="1"></li>
+            <li class="slider__indicator bikes__indicator_mini" data-slide-to="2"></li>
           </ol>
         </div>
 
@@ -312,7 +334,7 @@
               <div class="slider__item bikes__item">
                 <div class="bikes__icon">
                   <div class="bikes__img-cont">
-                    <a href="" class="bikes__img-cont">
+                    <a href="" >
                       <img src="./img/bikes-8.png" alt="велосипед" class="bikes__img">
                       <a href="" class="bikes__text">BMC Timemachine 01 ONE</a>
                     </a>
