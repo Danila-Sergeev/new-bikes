@@ -1,0 +1,19 @@
+$size_xl : 1440px;
+$main_color: #151515;
+$inter : 'Inter';
+$opacity : .75;
+$transition: .3s;
+$backgroude_black: #333333;
+.black-theme{
+    background: $backgroude_black;
+    *{
+      color: #FFFFFF;
+      background: $backgroude_black;
+    }
+    .page__padding{
+      background: $backgroude_black;
+    }
+    .page{
+      background: $backgroude_black;
+    }
+  }

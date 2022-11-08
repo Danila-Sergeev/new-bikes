@@ -1,0 +1,333 @@
+@charset "UTF-8";
+.footer {
+  background: #EFEFEF;
+  position: relative;
+}
+.footer__title {
+  background: #EFEFEF;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #151515;
+  max-width: 229px;
+  margin: 0 auto 50px 120px;
+  padding-top: 80px;
+}
+@media screen and (max-width: 1150px) {
+  .footer__title {
+    font-size: 22px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__title {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__title {
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .footer__title {
+    font-size: 18px;
+    line-height: 25px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer__title {
+    margin-left: 18px;
+  }
+}
+.footer__forms {
+  background: #EFEFEF;
+  position: relative;
+}
+.footer__form {
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  color: #151515;
+  width: 340px;
+  height: 50px;
+  cursor: pointer;
+  background: #EFEFEF;
+  padding: 0 20px;
+  margin-left: 120px;
+}
+@media screen and (max-width: 1150px) {
+  .footer__form {
+    height: 40px;
+    width: 310px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__form {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__form {
+    height: 40px;
+    width: 240px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .footer__form {
+    height: 32px;
+    width: 178px;
+    font-size: 11px;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer__form {
+    margin-left: 18px;
+    height: 50px;
+    width: 274px;
+    padding: 0;
+    padding-left: 10px;
+  }
+}
+.footer__form::-webkit-input-placeholder {
+  color: #222222;
+  opacity: 0.7;
+}
+.footer__form::-moz-placeholder {
+  color: #222222;
+  opacity: 0.7;
+}
+.footer__form:-moz-placeholder {
+  color: #222222;
+  opacity: 0.7;
+}
+.footer__form :-ms-input-placeholder {
+  color: #222222;
+  opacity: 0.7;
+}
+.footer__form:hover::-webkit-input-placeholder {
+  opacity: 1;
+}
+.footer__form:hover::-moz-placeholder {
+  opacity: 1;
+}
+.footer__form:hover::-moz-placeholder {
+  opacity: 1;
+}
+.footer__form:hover::-ms-input-placeholder {
+  opacity: 1;
+}
+.footer__name {
+  background: #EFEFEF;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #CFCFCF;
+  margin: 100px auto 0 120px;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 1150px) {
+  .footer__name {
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__name {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__name {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .footer__name {
+    font-size: 12px;
+    padding-bottom: 45px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer__name {
+    margin-left: 18px;
+  }
+}
+.footer__switch-box {
+  background: #EFEFEF;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 80px;
+  right: 120px;
+  width: 140px;
+}
+@media screen and (max-width: 1000px) {
+  .footer__switch-box {
+    bottom: 40px;
+    right: 60px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__switch-box {
+    width: 104px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__switch-box {
+    display: none;
+    width: 125px;
+  }
+}
+.footer__switch-box_on {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .footer__switch-box_on {
+    display: flex;
+    position: static;
+    margin: auto;
+    margin-top: 318px;
+    background: none;
+  }
+}
+.footer__switch-btn {
+  display: inline-block;
+  width: 44px; /* ширина */
+  height: 24px; /* высота */
+  border-radius: 19px; /* радиус скругления */
+  background: #545454; /* цвет фона */
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms; /* анимация */
+}
+@media screen and (max-width: 720px) {
+  .footer__switch-btn {
+    width: 39px;
+    height: 19px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__switch-btn {
+    width: 44px;
+    height: 24px;
+  }
+}
+.footer__switch-btn::after {
+  content: "";
+  height: 20px; /* высота кнопки */
+  width: 20px; /* ширина кнопки */
+  border-radius: 17px;
+  background: #24B47E; /* цвет кнопки */
+  top: 2px; /* положение кнопки по вертикали относительно основы */
+  left: 21px; /* положение кнопки по горизонтали относительно основы */
+  transition-duration: 300ms; /* анимация */
+  position: absolute;
+  z-index: 1;
+}
+@media screen and (max-width: 720px) {
+  .footer__switch-btn::after {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__switch-btn::after {
+    width: 20px;
+    height: 20px;
+  }
+}
+.footer__switch-on {
+  background: #FFFFFF;
+}
+.footer__switch-on::after {
+  left: 2px;
+}
+.footer__icon {
+  background: #EFEFEF;
+}
+@media screen and (max-width: 720px) {
+  .footer__icon {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__icon {
+    background: none;
+    width: 26px;
+  }
+}
+.footer__form-button {
+  display: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: right;
+  color: #151515;
+  border: none;
+  background: #EFEFEF;
+  position: absolute;
+  top: 12px;
+  left: 444px;
+  cursor: pointer;
+  z-index: 20;
+}
+@media screen and (max-width: 1150px) {
+  .footer__form-button {
+    left: 356px;
+    top: 9px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__form-button {
+    left: 289px;
+    top: 9px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .footer__form-button {
+    left: 210px;
+    top: 2px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footer__form-button {
+    left: 266px;
+    top: 9px;
+    font-size: 14px;
+  }
+}
+.footer__form-button_on {
+  display: block;
+}
+.footer input:focus::-moz-placeholder {
+  color: transparent;
+}
+.footer input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.footer input:focus::placeholder {
+  color: transparent;
+}/*# sourceMappingURL=footer.css.map */

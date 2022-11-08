@@ -1,0 +1,186 @@
+.training {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 150px 0 120px auto;
+}
+@media screen and (max-width: 955px) {
+  .training {
+    margin: 80px 0 80px auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .training {
+    margin: 60px 0 60px auto;
+  }
+}
+@media screen and (max-width: 588px) {
+  .training {
+    margin: 40px 0 40px auto;
+  }
+}
+.training__text-block {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .training__text-block {
+    margin: 0 auto;
+  }
+}
+.training__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+}
+@media screen and (max-width: 1300px) {
+  .training__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .training__title {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .training__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 705px) {
+  .training__title {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .training__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.training__subtitle {
+  max-width: 460px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1300px) {
+  .training__subtitle {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .training__subtitle {
+    font-size: 14px;
+    line-height: 25px;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .training__subtitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 874px) {
+  .training__subtitle {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 705px) {
+  .training__subtitle {
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 606px) {
+  .training__subtitle {
+    font-size: 8px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 504px) {
+  .training__subtitle {
+    line-height: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .training__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 40px;
+  }
+}
+.training__app {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  .training__app {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .training__app {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .training__app {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 705px) {
+  .training__app {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .training__app {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 60px;
+    margin-right: 20px;
+  }
+}
+.training__app:hover {
+  opacity: 0.75;
+}
+.training__apps {
+  display: flex;
+}
+.training__img {
+  max-width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .training__img {
+    margin: auto;
+    margin-top: 40px;
+    display: none;
+  }
+}
+.training__img_on {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .training__img_on {
+    display: block;
+  }
+}/*# sourceMappingURL=training.css.map */

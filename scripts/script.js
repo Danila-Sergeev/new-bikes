@@ -3,11 +3,11 @@ const SwitchBtnHeader =  document.querySelector('#header__switch-btn');
 const page = document.querySelector(".page__padding");
 const pagePadding = document.querySelector(".page");
 const body = document.querySelector(".body");
-
 const formButton = document.querySelector('.footer__form-button');
 const form = document.querySelector('.footer__form');
 const footer = document.querySelector('.footer');
 const bikesBtn = document.querySelector(".bikes__button");
+const bikesBtnArrow = document.querySelector(".bikes__arrow");
 const bikesLink = document.querySelector(".bikes__links");
 const bikesL1 = document.querySelector('#link1');
 const bikesL2 = document.querySelector('#link2');
@@ -38,6 +38,11 @@ const humbLinkT = document.querySelector("#header__link-item3");
   });
   SwitchBtnHeader.addEventListener('click', () => {
     SwitchBtnHeader.classList.toggle('footer__switch-on');
+    page.classList.toggle('black-theme');
+    pagePadding.classList.toggle('black-theme');
+    body.classList.toggle('black-theme');
+    footer.classList.toggle('footer_darck');
+    menuMain.classList.toggle('black-theme');
   });
   form.addEventListener('mouseover', () => {
     formButton.classList.add('footer__form-button_on');
@@ -60,12 +65,17 @@ bikesBtn.addEventListener('click', () =>{
   bikesLink.classList.toggle('bikes__links_open');
   sliderArrow.classList.toggle('bikes__arrow_open');
 })
+bikesBtnArrow.addEventListener('click', () =>{
+  bikesLink.classList.toggle('bikes__links_open');
+  sliderArrow.classList.toggle('bikes__arrow_open');
+})
 bikesL1.addEventListener('click', () => {
   sliderMiniFst.classList.remove('bikes__slider_active');
   sliderMiniSnd.classList.add('bikes__slider_active');
   sliderMiniThd.classList.add('bikes__slider_active');
   bikesLink.classList.toggle('bikes__links_open');
   bikesBtn.textContent = bikesL1.textContent;
+  sliderArrow.classList.toggle('bikes__arrow_open');
 })
 bikesL2.addEventListener('click', () => {
   sliderMiniSnd.classList.remove('bikes__slider_active');
@@ -73,6 +83,7 @@ bikesL2.addEventListener('click', () => {
   sliderMiniThd.classList.add('bikes__slider_active');
   bikesLink.classList.toggle('bikes__links_open')
   bikesBtn.textContent = bikesL2.textContent;
+  sliderArrow.classList.toggle('bikes__arrow_open');
 })
 bikesL3.addEventListener('click', () => {
   sliderMiniThd.classList.remove('bikes__slider_active');
@@ -80,6 +91,7 @@ bikesL3.addEventListener('click', () => {
   sliderMiniFst.classList.add('bikes__slider_active');
   bikesLink.classList.toggle('bikes__links_open')
   bikesBtn.textContent = bikesL3.textContent;
+  sliderArrow.classList.toggle('bikes__arrow_open');
 })
 
 if (menuBurger) {

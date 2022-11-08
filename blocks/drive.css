@@ -1,0 +1,177 @@
+.drive__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200.5px, 1fr));
+  margin: 250px auto 60px 0;
+}
+@media screen and (max-width: 1150px) {
+  .drive__container {
+    margin: 200px auto 60px 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .drive__container {
+    margin: 122px auto 60px 0;
+  }
+}
+@media screen and (max-width: 713px) {
+  .drive__container {
+    margin: 68px auto 0 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  .drive__container {
+    margin: 103px auto 0 0;
+  }
+}
+.drive__img {
+  max-width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .drive__img {
+    margin: auto;
+  }
+}
+.drive__text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+  margin-left: 80px;
+}
+@media screen and (max-width: 1145px) {
+  .drive__text-block {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .drive__text-block {
+    margin-left: 0;
+    max-width: 350px;
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .drive__text-block {
+    margin: auto;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+}
+.drive__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  max-width: 470px;
+}
+@media screen and (max-width: 1300px) {
+  .drive__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .drive__title {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .drive__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .drive__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 623px) {
+  .drive__title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 555px) {
+  .drive__title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .drive__title {
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .drive__name-block {
+    margin-top: 40px;
+  }
+}
+.drive__name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+@media screen and (max-width: 1300px) {
+  .drive__name {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .drive__name {
+    font-size: 16px;
+  }
+}
+@media sceen and (max-width: 934px) {
+  .drive__name {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .drive__name {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .drive__name {
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+.drive__prof {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+}
+@media screen and (max-width: 1300px) {
+  .drive__prof {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .drive__prof {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 934px) {
+  .drive__prof {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .drive__prof {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}/*# sourceMappingURL=drive.css.map */

@@ -1,0 +1,13 @@
+.black-theme {
+  background: #333333;
+}
+.black-theme * {
+  color: #FFFFFF;
+  background: #333333;
+}
+.black-theme .page__padding {
+  background: #333333;
+}
+.black-theme .page {
+  background: #333333;
+}/*# sourceMappingURL=black-theme.css.map */

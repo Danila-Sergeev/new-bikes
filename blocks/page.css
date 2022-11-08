@@ -1,0 +1,42 @@
+* {
+  background: #F4F4F4;
+  color: #151515;
+  text-decoration: none;
+  margin: 0;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #F4F4F4;
+}
+.page__padding {
+  background-color: #F4F4F4;
+  max-width: 1440px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+@media screen and (max-width: 1150px) {
+  .page__padding {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page__padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .page__padding {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+.page__position {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}/*# sourceMappingURL=page.css.map */
