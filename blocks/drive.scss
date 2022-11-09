@@ -17,10 +17,13 @@ $backgroude_black: #333333;
         margin:122px auto 60px 0;
       }
       @media screen and (max-width:713px){
-        margin: 68px auto 0 0;
+        margin: 107px auto 0 0;
+      }
+      @media screen and (max-width:480px){
+        margin: 125px auto 0 0;
       }
       @media screen and (max-width:390px){
-        margin: 103px auto 0 0;
+        margin: 120px auto 0 0;
       }
     }
     &__img{

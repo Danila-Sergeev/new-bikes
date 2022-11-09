@@ -38,4 +38,20 @@
 .black-theme .training__subtitle {
   color: #E5E5E5;
   opacity: 0.7;
+}
+@media screen and (max-width: 480px) {
+  .black-theme .slider__indicator {
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.4' width='10' height='10' rx='5' fill='%23AAAAAA'/%3E%3C/svg%3E%0A");
+  }
+}
+@media screen and (max-width: 480px) {
+  .black-theme .slider__indicator_active {
+    width: 29px;
+    background-image: url("data:image/svg+xml,%3Csvg width='29' height='10' viewBox='0 0 29 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='29' height='10' rx='5' fill='%2377C5D5'/%3E%3C/svg%3E%0A");
+  }
+}
+@media screen and (max-width: 480px) {
+  .black-theme .bikes__indicators {
+    max-width: 66px;
+  }
 }/*# sourceMappingURL=black-theme.css.map */
