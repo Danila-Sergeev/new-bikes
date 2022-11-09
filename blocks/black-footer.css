@@ -1,24 +1,44 @@
 .footer_darck {
   background: #2F2F2F;
+  color: #FFFFFF;
 }
 .footer_darck .footer__form-button {
   background: #2F2F2F;
+  color: #FFFFFF;
 }
 .footer_darck .footer__icon {
   background: #2F2F2F;
+  color: #FFFFFF;
 }
 .footer_darck .footer__switch-box {
   background: #2F2F2F;
+  color: #FFFFFF;
 }
 .footer_darck .footer__name {
   background: #2F2F2F;
+  color: #FFFFFF;
 }
 .footer_darck .footer__form {
   background: #2F2F2F;
+  color: #FFFFFF;
+}
+.footer_darck .footer__form::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.footer_darck .footer__form::-moz-placeholder {
+  color: #FFFFFF;
+}
+.footer_darck .footer__form:-moz-placeholder {
+  color: #FFFFFF;
+}
+.footer_darck .footer__form :-ms-input-placeholder {
+  color: #FFFFFF;
 }
 .footer_darck .footer__forms {
   background: #2F2F2F;
+  color: #FFFFFF;
 }
 .footer_darck .footer__title {
   background: #2F2F2F;
+  color: #FFFFFF;
 }/*# sourceMappingURL=black-footer.css.map */

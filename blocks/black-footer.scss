@@ -1,25 +1,37 @@
 .footer_darck{
     background: #2F2F2F;
+    color:#FFFFFF;
     .footer__form-button{
       background: #2F2F2F;
+      color:#FFFFFF;
     }
     .footer__icon{
       background: #2F2F2F;
+      color:#FFFFFF;
     }
     .footer__switch-box{
       background: #2F2F2F;
+      color:#FFFFFF;
     }
     .footer__name{
       background: #2F2F2F;
+      color:#FFFFFF;
     }
     .footer__form{
       background: #2F2F2F;
+      color:#FFFFFF;
     }
+      .footer__form::-webkit-input-placeholder {color:  #FFFFFF;}
+      .footer__form::-moz-placeholder          {color:  #FFFFFF;}
+      .footer__form:-moz-placeholder           {color:  #FFFFFF;}
+      .footer__form :-ms-input-placeholder      {color:  #FFFFFF;}
     .footer__forms{
       background: #2F2F2F;
+      color:#FFFFFF;
     }
     .footer__title{
       background: #2F2F2F;
+      color:#FFFFFF;
     }
   }
   
